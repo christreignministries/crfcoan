@@ -1,0 +1,86 @@
+.giving-bg {
+  margin-top: -70px;
+  height: 0;
+}
+.giving-image {
+  max-width: 100%;
+}
+.giving-header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+.items {
+  background-color: #042444;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  width: 200px;
+  padding: 10px 0% 10px 0%;
+  box-shadow: rgba(4, 36, 68, 0.24) 0px 3px 8px;
+  color: white;
+  border-radius: 25px;
+}
+.giving-at-crfcoan {
+  background-color: rgb(240, 240, 240);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 25px 5% 2% 5%;
+  justify-content: center;
+  border-radius: 10px;
+  align-items: center;
+  padding: 15px 15px 15px 15px;
+}
+.giving-image-2 {
+  max-width: 100%;
+  border-radius: 15px;
+}
+.giving-at-crfcoan h3 {
+  color: #042444;
+  align-items: center;
+  font-size: 100%;
+  font-weight: 500;
+  padding: 10px 25px 10px 25px;
+}
+.account-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  background-color: rgb(240, 240, 240);
+  margin: 25px 2% 25px 2%;
+  border-radius: 10px;
+  padding: 15px 15px 15px 15px;
+}
+.bank {
+  background-color: #042444;
+  padding: 10px 10px 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 28px;
+  position: relative;
+  top: 0px;
+  color: white;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-weight: 400;
+}
+@media screen and (max-width: 800px) {
+  .giving-bg {
+    margin-top: 0px;
+  }
+  .giving-at-crfcoan {
+    margin: 20px 2% 20px 2%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .method-of-giving {
+    margin: 20px 2% 0px 2%;
+  }
+  .account-details {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

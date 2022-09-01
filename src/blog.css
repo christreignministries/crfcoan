@@ -1,0 +1,12 @@
+.parent-bg {
+  margin-top: -70px;
+  background-color: #ffc000;
+}
+.coming-soon {
+  max-width: 100%;
+}
+@media screen and (max-width: 800px) {
+  .parent-bg {
+    margin-top: 0px;
+  }
+}

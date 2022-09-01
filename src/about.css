@@ -1,0 +1,90 @@
+.parent {
+  margin-top: -70px;
+}
+.top-image {
+  max-width: 100%;
+}
+.container {
+  display: grid;
+  margin: 0;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 10px 0px 0px 0px;
+  z-index: -4;
+  gap: 1rem;
+}
+.church-name {
+  color: rgba(4, 36, 68);
+}
+.about-a {
+  padding: 0px 5% 0px 5%;
+}
+.details {
+  font-size: 120%;
+  font-weight: 700;
+  color: rgba(4, 36, 68);
+}
+.details h2 {
+  color: black;
+}
+.about-a h2 {
+  font-size: 100%;
+  margin-right: 10px;
+  font-weight: 500;
+}
+.details button {
+  background-color: rgba(4, 36, 68);
+  border: none;
+  color: white;
+  font-size: 15px;
+  border-radius: 15px;
+  font-weight: 550;
+  padding: 8px 20px 8px 20px;
+  box-shadow: rgba(4, 36, 68, 0.24) 0px 3px 8px;
+}
+.church-image {
+  max-width: 100%;
+  height: 745px;
+  border-radius: 5px;
+}
+.about-pastors {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0px 10px 0px 10px;
+  gap: 1rem;
+}
+.pastors-image {
+  max-width: 100%;
+  border-radius: 15px;
+  margin: 10px 0px 20px 0px;
+  padding: 0px 0px 10px 0px;
+}
+.container-b {
+  background-color: #131313;
+  position: relative;
+  top: 10px;
+}
+.snr-pst-header {
+  text-align: center;
+  line-height: 5px;
+  padding: 30px 0px 0px 0px;
+  color: rgb(255, 255, 255);
+  font-size: 150%;
+}
+hr {
+  border: 2px solid white;
+  background: #ffffff;
+  position: relative;
+  width: 70px;
+  height: 0.1px;
+}
+@media only screen and (max-width: 800px) {
+  .parent {
+    margin-top: 0px;
+  }
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about-pastors {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
