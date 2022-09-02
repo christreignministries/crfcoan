@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import Logo from "./Images/church logo copy.png";
+import Logo from "./Images/church logo-copy.png";
 import Menu from "./Images/2976215.png";
 import { Link } from "react-router-dom";
 import MenuClose from "./Images/1907734.png";
-import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
-
+import TopIcons from "./topIcons";
 class Navigation extends Component {
   state = {
     display: "none",
@@ -32,6 +31,7 @@ class Navigation extends Component {
   render() {
     return (
       <div className="parent-header">
+        {/* <TopIcons /> */}
         <div className="header-bg">
           <Link to="/about" className="routes-b" onClick={this.clearMenu}>
             <img src={Logo} alt="church-logo" className="church-logo" />
@@ -50,17 +50,6 @@ class Navigation extends Component {
             onClick={this.toggleMenu}
             style={{ display: `${this.state.openMenuToggle}` }}
           />{" "}
-          <div className="top-icon">
-            <a href="https://web.facebook.com/Christreignministries/">
-              <FaFacebook className="nav-link" />
-            </a>
-            <a href="https://www.instagram.com/christreignministries/">
-              <FaInstagram className="nav-link" />
-            </a>
-            <a href="https://wa.me/2348134225529">
-              <FaWhatsapp className="nav-link" />
-            </a>
-          </div>
           <div className="hamburger-bg" onClick={this.toggleMenu}></div>
         </div>
         <ul className="ul-menu">
