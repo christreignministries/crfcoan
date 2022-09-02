@@ -14,7 +14,8 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
     "react-router-dom": "^6.3.0",
-    "react-social-icons": "^5.14.0"
+    "react-social-icons": "^5.14.0",
+    "react-spinner": "^0.2.7"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",

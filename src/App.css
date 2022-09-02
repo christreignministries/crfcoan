@@ -1,7 +1,9 @@
+html,
 body {
   margin: 0;
-  font-family: montserrat;
-  font-weight: 500;
+
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
   overflow-x: hidden;
 }
 ::-webkit-scrollbar {
@@ -20,14 +22,21 @@ body {
 }
 .top-icon {
   position: relative;
-  color: white;
-  top: -25px;
+  top: 50px;
   left: 88%;
   right: 10%;
   font-size: 95%;
 }
+.homepage-image-container {
+  background-color: white;
+  width: 100%;
+}
 .nav-link {
   margin-left: 2%;
+  color: rgb(255, 255, 255);
+  position: relative;
+  z-index: 99;
+  top: -20px;
 }
 .routes {
   text-decoration: none;
@@ -54,7 +63,6 @@ body {
 }
 .header-bg {
   background-color: rgba(4, 36, 68);
-
   height: 75px;
 }
 .church-logo {
@@ -62,6 +70,11 @@ body {
   top: 7px;
   left: 30px;
   position: relative;
+}
+.parent-header {
+  height: 120px;
+  position: relative;
+  top: -20px;
 }
 .ul-menu {
   position: relative;
@@ -96,6 +109,7 @@ body {
   left: 10%;
   animation: slide 4s;
   z-index: 99;
+  font-weight: 550;
 }
 @keyframes slide {
   from {
@@ -174,11 +188,12 @@ body {
 }
 .testimonies-a .names {
   color: rgb(7, 20, 33);
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
   position: relative;
   top: 10px;
   z-index: 8;
+  font-size: 150%;
   line-height: 0px;
 }
 .testimonies-a .first {
@@ -195,7 +210,7 @@ body {
 }
 .grid-a {
   background-color: rgb(240, 240, 240);
-  font-size: 105%;
+  font-size: 100%;
   border-radius: 20px;
   display: flex;
   justify-content: center;
@@ -222,11 +237,11 @@ body {
   border: none;
   padding: 10px 10px 10px 15px;
   position: relative;
+  top: 10%;
   left: 0%;
   font-size: 70%;
   cursor: pointer;
   outline: none;
-  box-shadow: rgba(4, 36, 68, 0.24) 0px 3px 8px;
 }
 
 .testimonies-items h2 {
@@ -299,9 +314,8 @@ body {
 .footer-body h4 {
   padding-bottom: 30px;
   font-weight: 400;
-  font-size: 115%;
+  font-size: 120%;
   text-align: center;
-  font-size: 25px;
 }
 .footer-body h3 {
   position: relative;
@@ -409,6 +423,15 @@ body {
   background-color: #042444;
 }
 @media only screen and (max-width: 800px) {
+  .parent-header {
+    height: 45px;
+    position: relative;
+    top: 0px;
+  }
+  html,
+  body {
+    overflow-x: visible;
+  }
   .top-icon {
     display: none;
   }
@@ -425,7 +448,7 @@ body {
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
     padding-top: 10px;
-    width: 17%;
+    width: 21%;
     padding-bottom: 10px;
   }
 
@@ -518,6 +541,7 @@ body {
   }
   .grid-a {
     height: 250px;
+    padding-bottom: 3%;
   }
   .ul-menu {
     display: none;
@@ -587,7 +611,7 @@ body {
     top: -40px;
   }
   .footer-parent {
-    height: 235px;
+    height: 250px;
   }
   .copyright {
     top: 15px;

@@ -2,7 +2,7 @@
   margin-top: -70px;
 }
 .contact-us-image {
-  max-width: 100%;
+  max-width: 110%;
 }
 
 .first-header {
@@ -29,8 +29,9 @@
 }
 .reach-flex {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   position: relative;
+
   top: 40px;
   gap: 1rem;
 
@@ -55,13 +56,23 @@
   font-weight: 450;
   /* padding: 0px 0px 0px 20px; */
 }
+.-icona {
+  font-size: 15px;
+  position: relative;
+  top: 2px;
+  padding: 0px 5px 0px 0px;
+}
 .reach-us-through .item-b {
   line-height: 20px;
-  width: 200%;
+  width: 100%;
   font-weight: 400;
   /* padding: 0px 0px 0px 20px; */
 }
-
+.social-networks {
+  position: relative;
+  left: 40%;
+  width: 75%;
+}
 .social-networks .social-header {
   color: rgb(0, 39, 168);
   line-height: 20px;
@@ -70,6 +81,7 @@
 }
 .social-networks .sub-a {
   font-weight: 400;
+
   /* padding: 0px 0px 0px 50px; */
 }
 .icons {
@@ -81,6 +93,8 @@
 }
 .icons .fb-icon {
   padding: 10px 0px 10px 0px;
+  position: relative;
+  top: -7px;
 }
 .underline {
   border: 1px solid rgb(0, 0, 0);
@@ -105,14 +119,16 @@ textarea {
   border: none;
   border: 10px solid rgb(244, 244, 244);
   border-radius: 7px;
+
   resize: none;
+  font-size: 12px;
 }
 input {
   background-color: rgb(244, 244, 244);
   outline: none;
   padding-left: 10px;
   border: none;
-  font-size: 16px;
+  font-size: 12px;
   border-radius: 7px;
 }
 
@@ -134,6 +150,7 @@ input::placeholder {
   position: relative;
   display: grid;
   justify-items: center;
+
   grid-template-columns: repeat(1, 1fr);
   align-items: center;
   top: 0px;
@@ -141,9 +158,12 @@ input::placeholder {
 .prayer {
   position: relative;
   color: rgb(0, 39, 168);
-  top: 15px;
+  top: 20px;
+  margin-bottom: 20px;
   font-size: 16px;
+  font-weight: 800;
 }
+
 .input-item {
   width: 90%;
 }
@@ -176,6 +196,9 @@ input::placeholder {
   cursor: pointer;
   z-index: 99;
   margin-bottom: 35px;
+}
+.submit:hover {
+  background-color: rgb(0, 12, 51);
 }
 .input-grid {
   display: grid;

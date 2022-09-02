@@ -1,9 +1,9 @@
 import React from "react";
 import "./about.css";
-import ImageHeader from "./Images/IMG_7145.jpeg";
-import Image from "./Images/IMG_4585.jpeg";
-import PapaImage from "./Images/IMG_3710.jpeg";
-import MamaImage from "./Images/IMG_7909.jpeg";
+import ImageHeader from "./Images/IMG_7145.jpg";
+import Image from "./Images/IMG_7161-copy.jpg";
+import PapaImage from "./Images/IMG_3710.jpg";
+import MamaImage from "./Images/IMG_7909.jpg";
 import Footer from "./footer";
 
 const About = () => {

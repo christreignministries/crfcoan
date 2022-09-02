@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { images } from "./exportedImage";
-import ChurchImage from "./Images/IMG_4979.jpeg";
+import ChurchImage from "./Images/IMG_4979.jpg";
 import Footer from "./footer";
 import { Link } from "react-router-dom";
 import { quotes, testimonies, prayer } from "./exportedText";
@@ -36,7 +36,9 @@ class Home extends Component {
     return (
       <div>
         <div className="welcome">Welcome Beloved!</div>
-        <img src={images[this.state.count]} className="homepage-image" />
+        <div className="homepage-image-container">
+          <img src={images[this.state.count]} className="homepage-image" />
+        </div>
         <div className="welcome-to-church">
           <img src={ChurchImage} alt="church-image" />
 

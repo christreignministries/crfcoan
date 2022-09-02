@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./contact.css";
-import Image from "./Images/IMG_7424.jpeg";
+import Image from "./Images/IMG_7424.jpg";
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import Footer from "./footer";
 import axios from "axios";
@@ -12,6 +12,7 @@ const ContactUs = () => {
 
   const resetInputValue = (event) => {
     event.preventDefault();
+
     const data = {
       Name: name,
       Phone: phone,
@@ -25,6 +26,7 @@ const ContactUs = () => {
       .then((response) => {
         console.log(response);
       });
+
     setName("");
     setPhone("");
     setMessage("");
@@ -52,59 +54,69 @@ const ContactUs = () => {
             <h4 className="item-b">Phone Number</h4>
             <h4 className="item-b">Custom email address</h4>
           </div>
-          <div className="icons">
+          {/* <div className="icons">
             <FaFacebook className="fb-icon" />
             <FaInstagram className="fb-icon" />
             <FaWhatsapp className="fb-icon" />
-          </div>
+          </div> */}
           <div className="social-networks">
             <h3 className="social-header">SOCIAL NETWORKS</h3>
-            <div className="sub-a">christreignministries</div>
-            <h4 className="sub-a">christreignministries</h4>
-            <h4 className="sub-a">234 xxx xxx xxxx</h4>
+            <div className="sub-a">
+              <FaFacebook className="-icona" />
+              christreignministries
+            </div>
+            <h4 className="sub-a">
+              <FaInstagram className="-icona" />
+              christreignministries
+            </h4>
+            <h4 className="sub-a">
+              <FaWhatsapp className="-icona" />
+              234 xxx xxx xxxx
+            </h4>
           </div>
         </div>
       </div>
-      <div className="contact-us-form">
-        <div className="prayer">
-          <h2>PRAYER REQUEST</h2>
-        </div>
-        <div className="input-item">
-          <div className="input-grid">
-            <div>
-              Names
-              <input
-                className="name"
-                value={name}
-                placeholder="Please enter your names"
-                onChange={(event) => setName(event.target.value)}
-              />
-            </div>
-            <div>
-              Phone Number
-              <input
-                className="phone"
-                placeholder="Please enter your phone number"
-                value={phone}
-                onChange={(event) => setPhone(event.target.value)}
-              />
-            </div>
+      <form>
+        <div className="contact-us-form">
+          <div className="prayer">
+            <h2 className="h2">PRAYER REQUEST</h2>
           </div>
+          <div className="input-item">
+            <div className="input-grid">
+              <div>
+                Names
+                <input
+                  className="name"
+                  value={name}
+                  placeholder="Please enter your names"
+                  onChange={(event) => setName(event.target.value)}
+                />
+              </div>
+              <div>
+                Phone Number
+                <input
+                  className="phone"
+                  placeholder="Please enter your phone number"
+                  value={phone}
+                  onChange={(event) => setPhone(event.target.value)}
+                />
+              </div>
+            </div>
 
-          <div>
-            Message
-            <textarea
-              className="message"
-              value={message}
-              placeholder="Please enter your message"
-              onChange={(event) => setMessage(event.target.value)}
-            />
+            <div>
+              Message
+              <textarea
+                className="message"
+                value={message}
+                placeholder="Please enter your message"
+                onChange={(event) => setMessage(event.target.value)}
+              />
+            </div>
           </div>
+          <input className="submit" type="submit" onClick={resetInputValue} />
         </div>
-        <button className="submit" onClick={resetInputValue}>
-          Submit
-        </button>
-      </div>
+      </form>
+
       <Footer />
     </div>
   );

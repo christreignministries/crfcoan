@@ -6,13 +6,15 @@ import "./App.css";
 import Giving from "./giving";
 import Blog from "./blog";
 import ContactUs from "./contact";
-import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
+import { Route, Routes, HashRouter as Router } from "react-router-dom";
+import TopIcons from "./topIcons";
 
 class App extends Component {
   state = {};
   render() {
     return (
       <Router>
+        <TopIcons />
         <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />

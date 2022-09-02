@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./giving.css";
-import ImageHeader from "./Images/images - 2022-08-25T111508.791.jpeg";
+import ImageHeader from "./Images/images - 2022-08-25T111508.791.jpg";
 import Footer from "./footer";
 
 const Giving = () => {
