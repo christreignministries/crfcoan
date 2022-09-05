@@ -10,7 +10,7 @@ const TopIcons = () => {
       <a href="https://www.instagram.com/christreignministries/">
         <FaInstagram className="nav-link" />
       </a>
-      <a href="https://wa.me/2348134225529">
+      <a href="https://wa.me/2347085398720">
         <FaWhatsapp className="nav-link" />
       </a>
     </div>

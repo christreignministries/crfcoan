@@ -2,7 +2,7 @@
   margin-top: -70px;
 }
 .top-image {
-  max-width: 100%;
+  width: 100%;
 }
 .container {
   display: grid;
@@ -21,7 +21,6 @@
 .details {
   font-size: 120%;
   font-weight: 700;
-  color: rgba(4, 36, 68);
 }
 .details h2 {
   color: black;
@@ -32,14 +31,13 @@
   font-weight: 500;
 }
 .details button {
-  background-color: rgba(4, 36, 68);
+  background-color: blue;
   border: none;
   color: white;
   font-size: 15px;
-  border-radius: 15px;
+  border-radius: 10px;
   font-weight: 550;
   padding: 8px 20px 8px 20px;
-  box-shadow: rgba(4, 36, 68, 0.24) 0px 3px 8px;
 }
 .church-image {
   max-width: 100%;

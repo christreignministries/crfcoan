@@ -31,7 +31,6 @@ class Navigation extends Component {
   render() {
     return (
       <div className="parent-header">
-        {/* <TopIcons /> */}
         <div className="header-bg">
           <Link to="/about" className="routes-b" onClick={this.clearMenu}>
             <img src={Logo} alt="church-logo" className="church-logo" />
@@ -52,6 +51,7 @@ class Navigation extends Component {
           />{" "}
           <div className="hamburger-bg" onClick={this.toggleMenu}></div>
         </div>
+
         <ul className="ul-menu">
           <li>
             <Link to="/" className="routes" onClick={this.clearMenu}>
@@ -64,8 +64,8 @@ class Navigation extends Component {
             </Link>
           </li>
           <li>
-            <Link to="/blog" className="routes" onClick={this.clearMenu}>
-              Blog
+            <Link to="/Devotionals" className="routes" onClick={this.clearMenu}>
+              Devotionals
             </Link>
           </li>
           <li>
@@ -79,7 +79,6 @@ class Navigation extends Component {
             </Link>
           </li>
         </ul>
-
         <div
           className="hamburger-menu"
           style={{ display: `${this.state.display}` }}
@@ -91,8 +90,8 @@ class Navigation extends Component {
             <h1>About</h1>
           </Link>
 
-          <Link to="/blog" className="routes-b" onClick={this.clearMenu}>
-            <h1>Blog</h1>
+          <Link to="/Devotionals" className="routes-b" onClick={this.clearMenu}>
+            <h1>Devotionals</h1>
           </Link>
           <Link to="/contact-us" className="routes-b" onClick={this.clearMenu}>
             <h1>Contact us</h1>

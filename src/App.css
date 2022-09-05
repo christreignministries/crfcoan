@@ -1,14 +1,13 @@
 html,
 body {
   margin: 0;
-
-  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
   overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
 }
 ::-webkit-scrollbar {
   width: 0;
 }
+
 .FaMapMarkerAlt {
   color: rgb(255, 255, 255);
   position: relative;
@@ -38,6 +37,9 @@ body {
   z-index: 99;
   top: -20px;
 }
+.welcome-to-increase-city {
+  color: blue;
+}
 .routes {
   text-decoration: none;
   color: white;
@@ -62,12 +64,13 @@ body {
   width: 0px;
 }
 .header-bg {
-  background-color: rgba(4, 36, 68);
+  margin-top: 0px;
+  background-color: rgb(7, 20, 33);
   height: 75px;
 }
 .church-logo {
-  width: 50px;
-  top: 7px;
+  width: 55px;
+  top: 20%;
   left: 30px;
   position: relative;
 }
@@ -144,7 +147,7 @@ body {
 }
 .testimonies {
   text-align: center;
-  color: #042444;
+  color: blue;
   text-align: center;
 }
 .testimonies-underline {
@@ -165,7 +168,7 @@ body {
   gap: 1.5rem;
 }
 .testimonies-items h2 {
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(245, 245, 245);
   border-radius: 10px;
   padding: 20px 10px 20px 20px;
   line-height: 10px;
@@ -187,7 +190,6 @@ body {
   padding: 0px 10px 0px 10px;
 }
 .testimonies-a .names {
-  color: rgb(7, 20, 33);
   font-weight: 600;
   text-align: center;
   position: relative;
@@ -201,15 +203,27 @@ body {
 }
 .testimonies-a .second {
   line-height: 29.5px;
+  font-size: 150%;
+  background-color: rgb(245, 245, 245);
+  padding: 0px 10px 0px 10px;
 }
-
+.read-more-text {
+  display: inline-block;
+  font-size: 15px;
+  background-color: rgb(245, 245, 245);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: rgba(0, 0, 255, 0.7);
+  font-weight: 600;
+}
 .welcome-to-church img {
   max-width: 100%;
   /* margin-top: 10%; */
   border-radius: 20px;
 }
 .grid-a {
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(245, 245, 245);
   font-size: 100%;
   border-radius: 20px;
   display: flex;
@@ -231,7 +245,9 @@ body {
   font-weight: 400;
 }
 .read-more {
-  background-color: #023365;
+  /* background-color: #023365; */
+  background-color: blue;
+
   color: white;
   border-radius: 5px;
   border: none;
@@ -243,98 +259,97 @@ body {
   cursor: pointer;
   outline: none;
 }
-
+.read-more:hover {
+  background-color: #00bbba;
+}
 .testimonies-items h2 {
   font-weight: 400;
 }
 .quotes {
-  color: white;
   position: relative;
-  top: 30px;
-  height: 140px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
+  top: 50px;
+  color: white;
   background-color: #042444;
-  overflow-x: visible;
-  /* padding: 0px 20px 10px 20px; */
+  margin: 0px 5% 0px 5%;
 }
-.quotes h2 {
+.quotes-text {
+  padding: 30px 3% 30px 3%;
+}
+.quotes-left-icon {
   position: relative;
-  top: -20px;
-  font-weight: 450;
-  font-size: 25px;
+  color: orange;
+  top: 20px;
+  font-size: 50px;
 }
-.quotes h1 {
-  position: absolute;
-  top: 70px;
-  font-size: 25px;
-  font-weight: 400;
-  font-style: italic;
+.quotes .papa-name {
+  padding: 0px 0px 30px 0px;
 }
 .events-div {
   position: relative;
   top: 75px;
-  margin: 0px 20px 100px 20px;
+  margin: 0px 20px 150px 20px;
 }
 .events-div h3 {
   font-weight: 550;
+
   text-align: center;
 }
 .events-parent {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(245, 245, 245);
 }
 .events-grid {
-  background-color: orange;
   display: flex;
-  height: 350px;
   border-top-left-radius: 10px;
   margin: 20px 20px 20px 20px;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
 }
-
-.footer-body {
-  top: 35px;
-  position: relative;
-  background-color: rgb(240, 240, 240);
-  z-index: 1;
-  top: -5px;
-}
-.footer-body h2 {
-  position: relative;
-  top: 20px;
-  padding-top: 20px;
-  font-size: 30px;
-}
-.footer-body h4 {
-  padding-bottom: 30px;
-  font-weight: 400;
-  font-size: 120%;
-  text-align: center;
-}
-.footer-body h3 {
+.events-div .upcoming-program {
+  font-size: 150%;
   position: relative;
   top: 10px;
-  font-size: 20px;
+  color: blue;
 }
-.footer-body h2,
-.footer-body h3,
-.footer-body h4 {
+
+.event-image-flex {
   display: flex;
-  padding-left: 10%;
-  padding-right: 10%;
-  justify-content: center;
 }
-.footer-body h2 {
-  color: #023365;
+.event-image {
+  max-width: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
-.footer-body h3 {
-  color: #023365;
+.program-name {
+  text-align: center;
+  font-size: 120%;
+  font-weight: 500;
+}
+.program-date {
+  font-size: 120%;
+  text-align: center;
+  font-weight: 600;
+}
+.born-again {
+  font-weight: 600;
+  color: blue;
+}
+.say-these-prayers {
+  font-weight: 500;
+}
+.salvation-prayer {
+  font-size: 20px;
+  font-weight: 500;
+}
+.footer-body {
+  position: relative;
+  top: -10px;
+  background-color: rgb(245, 245, 245);
+  margin: 20px 20px 20px 20px;
+  padding: 5px 20px 5px 20px;
+  text-align: center;
 }
 .footer-base {
   position: relative;
@@ -343,18 +358,18 @@ body {
 }
 .footer-parent {
   position: relative;
-  background-color: #042444;
+  background-color: rgb(7, 20, 33);
 }
-.footer-base h2 {
+.footer-base .church-name {
   cursor: pointer;
   color: #00aeff;
   padding-top: 15px;
   position: relative;
   display: flex;
   justify-content: center;
-  font-size: 105%;
+  font-size: 120%;
   line-height: 10px;
-  font-weight: 500;
+  font-weight: 700;
   top: 10px;
 }
 .footer-base h3 {
@@ -367,43 +382,49 @@ body {
   top: 10px;
   font-weight: 400;
 }
-.quick-links {
+.quick-links-parent {
   position: relative;
+  top: 16px;
   display: flex;
   justify-content: center;
+  right: 1%;
+}
+.quick-links {
   list-style: none;
-  left: -25px;
-  top: 16px;
-  max-width: 100%;
+  font-size: 120%;
+  margin: 0;
+  padding: 0;
 }
 .quick-links li {
+  display: inline-block;
   color: white;
-  font-size: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 100%;
   cursor: pointer;
   font-weight: 425;
-  margin-left: 2%;
-  margin-right: 1%;
 }
 .social-icons {
-  height: 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  top: 35px;
+}
+.social-icons .connect {
+  background-color: green;
+  line-height: 0px;
 }
 .social-icons h2 {
   color: white;
-  position: relative;
   max-width: 100%;
-  display: flex;
-  justify-content: center;
-  top: 20px;
   font-size: 15px;
-  padding: 10px 0px 10px 0px;
 }
 .ig-and-fb {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  top: 10px;
+  position: absolute;
   font-weight: 400;
   color: white;
+  line-height: 40px;
 }
 .social-logo {
   font-size: 20px;
@@ -414,13 +435,9 @@ body {
 .copyright {
   position: relative;
   max-width: 100%;
-  display: flex;
-  justify-content: center;
-  font-weight: 350;
   font-size: 12px;
   color: white;
-  top: 10px;
-  background-color: #042444;
+  top: 15px;
 }
 @media only screen and (max-width: 800px) {
   .parent-header {
@@ -448,7 +465,7 @@ body {
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
     padding-top: 10px;
-    width: 21%;
+    width: 27%;
     padding-bottom: 10px;
   }
 
@@ -492,13 +509,13 @@ body {
   }
   .hamburger-menu h1 {
     cursor: pointer;
-    font-size: 14px;
+    font-size: 100%;
     font-weight: 500;
     color: white;
     /* background-color: #023365; */
     border-radius: 5px;
     width: 70%;
-    left: 3%;
+    left: 5%;
     position: relative;
     margin: 7px 0px 5px 0px;
     margin-top: 7px;
@@ -508,14 +525,16 @@ body {
     border-radius: 3px;
     background-color: rgba(0, 128, 255, 0.24);
   }
-
-  .hamburger-menu h1:focus {
-    background-color: red;
-  }
   .welcome {
     font-size: 1.5rem;
     margin-top: 55%;
     color: rgb(255, 255, 255);
+  }
+  .welcome-div {
+    padding-bottom: 5%;
+  }
+  .welcome-div .welcome-to-increase-city {
+    font-size: 100%;
   }
   .testimonies-items {
     grid-template-columns: repeat(1, 1fr);
@@ -570,21 +589,7 @@ body {
     top: 20px;
   }
   .quotes {
-    position: relative;
-    top: 70px;
-    font-size: 20px;
-    height: 120px;
-  }
-  .quotes h2 {
-    font-size: 20px;
-  }
-  .quotes h1 {
-    position: absolute;
-    font-size: 20px;
-    width: 400px;
-    top: 60px;
-    display: flex;
-    justify-content: center;
+    top: 100px;
   }
   .events-parent {
     grid-template-columns: repeat(1, 1fr);
@@ -592,36 +597,37 @@ body {
   .events-div {
     top: 100px;
   }
-  .footer-body {
-    position: relative;
-    margin-top: 70px;
-  }
-  .footer-body h2 {
-    font-size: 30px;
-  }
-  .footer-body h4 {
-    font-weight: 400;
-    font-size: 20px;
-  }
-  .footer-body h3 {
-    font-size: 20px;
-  }
   .footer-base {
     position: relative;
     top: -40px;
   }
-  .footer-parent {
-    height: 250px;
+  .footer-base .church-name {
+    font-size: 80%;
+  }
+  .footer-base .church-address {
+    font-size: 90%;
   }
   .copyright {
-    top: 15px;
-    padding-bottom: 10px;
+    top: 30px;
+    /* padding-bottom: 5px; */
+  }
+  .footer-base .church-name {
+    text-align: center;
+    font-size: 80%;
   }
   .ig-and-fb {
     top: 20px;
   }
   .social-icons h2 {
     top: 30px;
+  }
+  .routes {
+    padding: 2px 7px 2px 7px;
+    border: 1px solid rgba(255, 255, 255);
+  }
+
+  .quick-links li {
+    font-size: 100%;
   }
   @media only screen and (max-width: 600px) {
     .hamburger {
@@ -642,6 +648,11 @@ body {
       right: 100px;
       position: absolute;
       top: 18px;
+    }
+  }
+  @media only screen and (max-width: 460px) {
+    .quick-links li {
+      font-size: 75%;
     }
   }
 }

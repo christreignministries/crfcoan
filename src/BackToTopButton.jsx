@@ -1,30 +1,16 @@
 import React from "react";
 import { FaArrowUp } from "react-icons/fa";
-// import { useState, useEffect } from "react";
 
 const BackToTopButton = () => {
-  //   const [button, setButton] = useState(false);
-
-  //   useEffect(() => {
-  //     window.addEventListener("scroll", () => {
-  //       if (window.scrollY > 200) {
-  //         setButton(true);
-  //       } else {
-  //         setButton(false);
-  //       }
-  //     });
-  //   });
-
   const scrollUp = () => {
+    window.focus();
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
   };
-
   return (
     <div>
-      {/* {button && ( */}
       <button
         style={{
           position: "relative",
@@ -39,11 +25,10 @@ const BackToTopButton = () => {
           border: "none",
           padding: "5px 10px 2px 10px",
         }}
-        onClick={() => scrollUp()}
+        onClick={scrollUp}
       >
         <FaArrowUp />
       </button>
-      {/* )} */}
     </div>
   );
 };

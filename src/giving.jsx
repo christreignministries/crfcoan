@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./giving.css";
 import ImageHeader from "./Images/images - 2022-08-25T111508.791.jpg";
+import GivingImage from "./Images/images---2022-09-04T172252.jpg";
 import Footer from "./footer";
 
 const Giving = () => {
@@ -45,7 +46,7 @@ const Giving = () => {
       </div>
       <div style={{ display: display }}>
         <div className="giving-at-crfcoan">
-          <img src={ImageHeader} className="giving-image-2" />
+          <img src={GivingImage} className="giving-image-2" />
 
           <div>
             <h3>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./contact.css";
-import Image from "./Images/IMG_7424.jpg";
+import Image from "./Images/IMG_5393.jpg";
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import Footer from "./footer";
 import axios from "axios";
@@ -30,6 +30,7 @@ const ContactUs = () => {
     setName("");
     setPhone("");
     setMessage("");
+    // alert(message.length);
   };
   return (
     <div className="contact-us-parent">
@@ -62,16 +63,30 @@ const ContactUs = () => {
           <div className="social-networks">
             <h3 className="social-header">SOCIAL NETWORKS</h3>
             <div className="sub-a">
-              <FaFacebook className="-icona" />
-              christreignministries
+              <h4 className="sub-a">
+                <a
+                  href="https://web.facebook.com/Christreignministries/"
+                  className="contactfb"
+                >
+                  <FaFacebook className="-icona" />
+                  christreignministries
+                </a>
+              </h4>
             </div>
             <h4 className="sub-a">
-              <FaInstagram className="-icona" />
-              christreignministries
+              <a
+                href="https://www.instagram.com/christreignministries/"
+                className="contactfb"
+              >
+                <FaInstagram className="-icona" />
+                christreignministries
+              </a>
             </h4>
             <h4 className="sub-a">
-              <FaWhatsapp className="-icona" />
-              234 xxx xxx xxxx
+              <a href="https://wa.me/2347085398720" className="contactfb">
+                <FaWhatsapp className="-icona" />
+                +234 708 539 8720
+              </a>
             </h4>
           </div>
         </div>
@@ -79,7 +94,7 @@ const ContactUs = () => {
       <form>
         <div className="contact-us-form">
           <div className="prayer">
-            <h2 className="h2">PRAYER REQUEST</h2>
+            <h2 className="h2">SHARE YOUR TESTIMONIES</h2>
           </div>
           <div className="input-item">
             <div className="input-grid">
@@ -104,11 +119,11 @@ const ContactUs = () => {
             </div>
 
             <div>
-              Message
+              Testimonies
               <textarea
                 className="message"
                 value={message}
-                placeholder="Please enter your message"
+                placeholder="Please share your testimonies"
                 onChange={(event) => setMessage(event.target.value)}
               />
             </div>

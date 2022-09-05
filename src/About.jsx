@@ -3,7 +3,7 @@ import "./about.css";
 import ImageHeader from "./Images/IMG_7145.jpg";
 import Image from "./Images/IMG_7161-copy.jpg";
 import PapaImage from "./Images/IMG_3710.jpg";
-import MamaImage from "./Images/IMG_7909.jpg";
+import MamaImage from "./Images/Snr-Pst-Mama-Image-2.jpg";
 import Footer from "./footer";
 
 const About = () => {
@@ -26,7 +26,7 @@ const About = () => {
           <div className="details">
             <button>Our Mission</button>
 
-            <h2>Delaying the yoke of</h2>
+            <h2>Destroying the yoke of</h2>
             <h2>Delay</h2>
             <h2>Marriage</h2>
             <h2>Pregnancy</h2>

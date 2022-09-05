@@ -2,9 +2,8 @@
   margin-top: -70px;
 }
 .contact-us-image {
-  max-width: 110%;
+  width: 100%;
 }
-
 .first-header {
   font-weight: 500;
   padding: 0px 0px 0px 8%;
@@ -16,7 +15,7 @@
   position: relative;
   top: 30px;
   padding: 0px 0px 0px 8%;
-  font-weight: 500;
+  font-weight: 550;
   line-height: 10px;
 }
 .third-header {
@@ -31,9 +30,10 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   position: relative;
-
+  justify-items: center;
   top: 40px;
   gap: 1rem;
+  font-size: 80%;
 
   /* display: flex;
   justify-content: center; */
@@ -57,7 +57,7 @@
   /* padding: 0px 0px 0px 20px; */
 }
 .-icona {
-  font-size: 15px;
+  font-size: 13px;
   position: relative;
   top: 2px;
   padding: 0px 5px 0px 0px;
@@ -70,8 +70,6 @@
 }
 .social-networks {
   position: relative;
-  left: 40%;
-  width: 75%;
 }
 .social-networks .social-header {
   color: rgb(0, 39, 168);
@@ -81,15 +79,10 @@
 }
 .social-networks .sub-a {
   font-weight: 400;
-
-  /* padding: 0px 0px 0px 50px; */
 }
-.icons {
-  position: relative;
-  width: 15px;
-  height: 0px;
-  left: 95%;
-  top: 27%;
+.contactfb {
+  text-decoration: none;
+  color: black;
 }
 .icons .fb-icon {
   padding: 10px 0px 10px 0px;
@@ -102,7 +95,7 @@
   position: relative;
   width: 70px;
   top: 25px;
-  left: -39%;
+  left: -38%;
   height: 0.1px;
   animation: slide-in 4s;
 }
@@ -128,6 +121,7 @@ input {
   outline: none;
   padding-left: 10px;
   border: none;
+
   font-size: 12px;
   border-radius: 7px;
 }
@@ -143,14 +137,13 @@ input::placeholder {
   }
   to {
     opacity: 1;
-    left: -36%;
+    left: -34%;
   }
 }
 .contact-us-form {
   position: relative;
   display: grid;
   justify-items: center;
-
   grid-template-columns: repeat(1, 1fr);
   align-items: center;
   top: 0px;
@@ -170,12 +163,12 @@ input::placeholder {
 .name {
   width: 99%;
   margin: 0px 0px 10px 0px;
-  height: 50px;
+  height: 40px;
 }
 .phone {
   width: 99%;
   margin: 0px 0px 10px 0px;
-  height: 50px;
+  height: 40px;
 }
 .message {
   width: 98.5%;
@@ -198,7 +191,7 @@ input::placeholder {
   margin-bottom: 35px;
 }
 .submit:hover {
-  background-color: rgb(0, 12, 51);
+  background-color: #00bbba;
 }
 .input-grid {
   display: grid;
@@ -219,6 +212,7 @@ input::placeholder {
   .contact-us-form {
     grid-template-columns: repeat(1, 1fr);
     top: 10px;
+    margin-right: 2%;
   }
   .b {
     top: 155px;

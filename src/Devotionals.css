@@ -1,0 +1,65 @@
+.parent-bg {
+  margin-top: -70px;
+}
+.coming-soon {
+  max-width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.ruler {
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  border: 0.5px solid rgb(0, 0, 0);
+  top: 100px;
+  width: 91%;
+}
+
+.top-header {
+  font-size: 150%;
+  line-height: 10px;
+  margin: 0px 0px 50px 4%;
+}
+.top-header .devotional {
+  font-weight: 800;
+}
+.message-div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0px 4% 4% 4%;
+  position: relative;
+  top: 50%;
+  gap: 1rem;
+}
+.div-picture {
+  display: flex;
+}
+.div-text {
+  display: flex;
+  padding: 0px 0px 0px 7%;
+  align-items: center;
+}
+.readmore {
+  background-color: orange;
+  border-radius: 5px;
+  padding: 5% 10% 5% 10%;
+  margin: 0px 0px 5% 0px;
+  outline: none;
+  border: none;
+}
+.spinner {
+  position: relative;
+  top: 200px;
+  left: 25%;
+  z-index: 99;
+}
+@media screen and (max-width: 800px) {
+  .parent-bg {
+    margin-top: 0px;
+  }
+  .message-div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .spinner {
+    left: 50%;
+  }
+}

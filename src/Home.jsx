@@ -2,13 +2,19 @@ import React, { Component } from "react";
 import { images } from "./exportedImage";
 import ChurchImage from "./Images/IMG_4979.jpg";
 import Footer from "./footer";
+import { Event } from "./exportedImage";
 import { Link } from "react-router-dom";
 import { quotes, testimonies, prayer } from "./exportedText";
+import { FaQuoteLeft } from "react-icons/fa";
 
 class Home extends Component {
   state = {
     count: 0,
     quotesCount: 0,
+    readmore1: 152,
+    readmore2: true,
+    readmore2b: 157,
+    readmore2b1: true,
   };
 
   componentDidMount = () => {
@@ -31,6 +37,22 @@ class Home extends Component {
     });
   };
 
+  toggleText = () => {
+    if (this.state.readmore2 === true) {
+      this.setState({ readmore1: testimonies[1].length, readmore2: false });
+    } else {
+      this.setState({ readmore1: 150, readmore2: true });
+    }
+  };
+
+  toggleText2 = () => {
+    if (this.state.readmore2b1 === true) {
+      this.setState({ readmore2b: testimonies[0].length, readmore2b1: false });
+    } else {
+      this.setState({ readmore2b: 150, readmore2b1: true });
+    }
+  };
+
   render() {
     const { count, quotesCount } = this.state;
     return (
@@ -43,14 +65,14 @@ class Home extends Component {
           <img src={ChurchImage} alt="church-image" />
 
           <div className="grid-a">
-            <div>
-              <h3>
+            <div className="welcome-div">
+              <h3 className="welcome-to-increase-city">
                 WELCOME TO INCREASE CITY (Christ Reign Forever Church Of All
                 Nations)
               </h3>
               <h4>
                 We are glad to have you here, we hope that you have a blessed
-                time here with us.
+                time with us.
               </h4>
 
               <Link to="/about">
@@ -68,30 +90,50 @@ class Home extends Component {
         <div className="testimonies-items">
           <div className="testimonies-a">
             <h2 className="names">Pastor (Mrs) Annabel Pelemoh</h2>
-            <h2 className="first">{testimonies[0]}</h2>
+            <div className="second">
+              {testimonies[0].slice(0, `${this.state.readmore2b}`)}
+              <button className="read-more-text" onClick={this.toggleText2}>
+                {this.state.readmore2b1 ? "read more" : "read less"}
+              </button>
+            </div>
           </div>
           <div className="testimonies-a">
             <h2 className="names">Mrs Vivian Ernest</h2>
-            <h2 className="second">{testimonies[1]}</h2>
+            <div className="second">
+              {testimonies[1].slice(0, `${this.state.readmore1}`)}
+              <button className="read-more-text" onClick={this.toggleText}>
+                {this.state.readmore2 ? "read more" : "read less"}
+              </button>
+            </div>
           </div>
         </div>
         <div className="quotes">
-          <h2>{quotes[quotesCount]}</h2>
-          <h1>Ehiebolo Godstime </h1>
+          <FaQuoteLeft className="quotes-left-icon" />
+          <h2 className="quotes-text">{quotes[quotesCount]}</h2>
+          <p className="papa-name">Ehiebolo Godstime </p>
         </div>
 
         <div className="events-div">
-          <h3>UPCOMING PROGRAMS</h3>
+          <h3 className="upcoming-program">UPCOMING PROGRAMS</h3>
           <div className="events-parent">
-            <div className="events-grid">Events</div>
-            <div className="events-grid">Events</div>
+            {Event.map((items) => {
+              return (
+                <div>
+                  <div className="events-grid">
+                    <img src={items.image} className="event-image" />
+                  </div>
+                  {/* <h2 className="program-name">{items.event}</h2>
+                  <h2 className="program-date"> {items.date}</h2> */}
+                </div>
+              );
+            })}
           </div>
         </div>
         <div className="upcoming-events"></div>
         <div className="footer-body">
-          <h2>BE BORN AGAIN</h2>
-          <h3>SAY THESE PRAYERS</h3>
-          <h4>{prayer[0]}</h4>
+          <h2 className="born-again">BE BORN AGAIN</h2>
+          <h3 className="say-these-prayers">SAY THESE PRAYERS</h3>
+          <h4 className="salvation-prayer">{prayer[0]}</h4>
         </div>
 
         <Footer />
