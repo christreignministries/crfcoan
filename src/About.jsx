@@ -9,7 +9,10 @@ import Footer from "./footer";
 const About = () => {
   return (
     <div className="parent">
-      <div className="welcome">Welcome Beloved!</div>
+      <div className="top-text1">
+        <div className="first1">ABOUT US</div>
+        <div className="second1">Increase City(CRFCOAN)</div>
+      </div>
       <img src={ImageHeader} className="top-image" />
       <div className="container">
         <img src={Image} alt="church-image" className="church-image" />

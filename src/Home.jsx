@@ -6,6 +6,7 @@ import { Event } from "./exportedImage";
 import { Link } from "react-router-dom";
 import { quotes, testimonies, prayer } from "./exportedText";
 import { FaQuoteLeft } from "react-icons/fa";
+import PartnerImage from "./Images/IMG_3177.jpg";
 
 class Home extends Component {
   state = {
@@ -23,7 +24,7 @@ class Home extends Component {
         count: Math.floor(Math.random() * images.length) + 0,
         quotesCount: Math.floor(Math.random() * quotes.length) + 0,
       }));
-    }, 5000);
+    }, 10000);
   };
 
   componentWillUnmount = () => {
@@ -57,10 +58,22 @@ class Home extends Component {
     const { count, quotesCount } = this.state;
     return (
       <div>
-        <div className="welcome">Welcome Beloved!</div>
         <div className="homepage-image-container">
+          {" "}
+          <div className="top-text">
+            <div className="first">We follow GOD</div>
+            <div className="second">
+              {/* Grow up Spiritually. We are committed to the teaching and application of God's Word in
+              all of life. */}
+              and nothing else.
+            </div>
+            <Link to="/devotionals">
+              <button className="learn-more">Learn More</button>
+            </Link>
+          </div>
           <img src={images[this.state.count]} className="homepage-image" />
         </div>
+
         <div className="welcome-to-church">
           <img src={ChurchImage} alt="church-image" />
 
@@ -112,13 +125,25 @@ class Home extends Component {
           <h2 className="quotes-text">{quotes[quotesCount]}</h2>
           <p className="papa-name">Ehiebolo Godstime </p>
         </div>
+        <div className="partners-div">
+          <div className="top-text">
+            <div className="first">Partner with GOD</div>
+            <div className="second">
+              2 Corinthians 9:7b for God loveth a cheerful giver.(KJV)
+            </div>
+            <Link to="/partnership" onClick={this.scrollUp}>
+              <button className="learn-more">Read More</button>
+            </Link>
+          </div>
+          <img src={PartnerImage} className="partners-image" />
+        </div>
 
         <div className="events-div">
           <h3 className="upcoming-program">UPCOMING PROGRAMS</h3>
           <div className="events-parent">
-            {Event.map((items) => {
+            {Event.map((items, i) => {
               return (
-                <div>
+                <div key={i}>
                   <div className="events-grid">
                     <img src={items.image} className="event-image" />
                   </div>

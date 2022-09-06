@@ -26,7 +26,7 @@ const Footer = () => {
           INCREASE CITY (CRFCOAN)
         </h2>
         <h3 className="church-address">
-          INCREASE CITY, Charlisco Phase 2, off Ekpan expressway, Warri, Delta
+          INCREASE CITY, Charlisco Phase 2, off NPA expressway, Warri, Delta
           State, Nigeria
         </h3>
         <div className="quick-links-parent">

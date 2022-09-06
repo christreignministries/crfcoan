@@ -10,6 +10,7 @@ import { Route, Routes, HashRouter as Router } from "react-router-dom";
 import TopIcons from "./topIcons";
 import Message from "./messagea";
 import Message2 from "./messageb";
+import Partnership from "./partnership";
 
 class App extends Component {
   state = {};
@@ -26,6 +27,7 @@ class App extends Component {
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/Devotionals/message1" element={<Message />} />
           <Route path="/Devotionals/message2" element={<Message2 />} />
+          <Route path="/partnership" element={<Partnership />} />
         </Routes>
       </Router>
     );

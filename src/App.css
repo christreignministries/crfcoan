@@ -1,13 +1,58 @@
-html,
 body {
   margin: 0;
+  overflow-y: hidden;
   overflow-x: hidden;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 ::-webkit-scrollbar {
   width: 0;
 }
-
+html {
+  margin: 0;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+::-webkit-scrollbar-button {
+  background-color: red;
+}
+.top-text {
+  z-index: 1;
+  position: absolute;
+  color: white;
+  left: 7%;
+  width: 75%;
+  animation: slide 4s;
+  top: 45%;
+}
+.homepage-image-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  position: relative;
+  padding: 0px 0px 0% 0px;
+  top: -65px;
+}
+.homepage-image-container .homepage-image {
+  filter: blur(1px);
+}
+.top-text .first {
+  font-size: 35px;
+  font-weight: 600;
+}
+.top-text .second {
+  padding: 10px 0px 15px 0px;
+  font-size: 18px;
+}
+.top-text .learn-more {
+  background-color: #008fbb;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  border-radius: 7px;
+  padding: 5px 15px 5px 15px;
+}
 .FaMapMarkerAlt {
   color: rgb(255, 255, 255);
   position: relative;
@@ -26,10 +71,7 @@ body {
   right: 10%;
   font-size: 95%;
 }
-.homepage-image-container {
-  background-color: white;
-  width: 100%;
-}
+
 .nav-link {
   margin-left: 2%;
   color: rgb(255, 255, 255);
@@ -65,7 +107,7 @@ body {
 }
 .header-bg {
   margin-top: 0px;
-  background-color: rgb(7, 20, 33);
+  background: linear-gradient(to right, rgb(11, 30, 49), rgb(7, 20, 33));
   height: 75px;
 }
 .church-logo {
@@ -82,38 +124,21 @@ body {
 .ul-menu {
   position: relative;
   display: flex;
-  top: -70px;
+  top: -65px;
   justify-content: center;
   list-style: none;
   text-align: center;
 }
 .ul-menu li {
   color: rgb(255, 255, 255);
-  font-size: 110%;
+  font-size: 80%;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-left: 40px;
 }
-.homepage-image {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  margin-top: -70px;
-}
-.welcome {
-  position: absolute;
-  color: white;
-  font-size: 2rem;
-  margin-top: 40%;
-  left: 10%;
-  animation: slide 4s;
-  z-index: 99;
-  font-weight: 550;
-}
+
 @keyframes slide {
   from {
     opacity: 0.1;
@@ -121,7 +146,7 @@ body {
   }
   to {
     opacity: 1;
-    left: 10%;
+    left: 7%;
   }
 }
 .items h1 {
@@ -180,6 +205,8 @@ body {
   position: relative;
   margin: 50px 50px 0px 50px;
   display: grid;
+  position: relative;
+  top: -35px;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
@@ -196,13 +223,13 @@ body {
   top: 10px;
   z-index: 8;
   font-size: 150%;
-  line-height: 0px;
+  line-height: 120%;
 }
 .testimonies-a .first {
   line-height: 26px;
 }
 .testimonies-a .second {
-  line-height: 29.5px;
+  line-height: 120%;
   font-size: 150%;
   background-color: rgb(245, 245, 245);
   padding: 0px 10px 0px 10px;
@@ -245,9 +272,7 @@ body {
   font-weight: 400;
 }
 .read-more {
-  /* background-color: #023365; */
   background-color: blue;
-
   color: white;
   border-radius: 5px;
   border: none;
@@ -283,7 +308,19 @@ body {
   font-size: 50px;
 }
 .quotes .papa-name {
+  font-style: italic;
   padding: 0px 0px 30px 0px;
+}
+.partners-div {
+  display: flex;
+  position: relative;
+  top: 100px;
+  height: 400px;
+  margin: 20px 0px 50px 0px;
+}
+.partners-div .partners-image {
+  object-fit: cover;
+  width: 100%;
 }
 .events-div {
   position: relative;
@@ -337,7 +374,7 @@ body {
   color: blue;
 }
 .say-these-prayers {
-  font-weight: 500;
+  font-weight: 600;
 }
 .salvation-prayer {
   font-size: 20px;
@@ -357,17 +394,18 @@ body {
   height: 200px;
 }
 .footer-parent {
+  margin-top: auto;
   position: relative;
-  background-color: rgb(7, 20, 33);
+  background-color: #141414;
 }
 .footer-base .church-name {
   cursor: pointer;
-  color: #00aeff;
+  color: #41f0d1;
   padding-top: 15px;
   position: relative;
   display: flex;
   justify-content: center;
-  font-size: 120%;
+  font-size: 115%;
   line-height: 10px;
   font-weight: 700;
   top: 10px;
@@ -409,10 +447,11 @@ body {
   align-items: center;
   flex-direction: column;
   position: relative;
-  top: 35px;
+  background-color: #1e1e1e;
+  top: 40px;
+  padding-top: 5px;
 }
 .social-icons .connect {
-  background-color: green;
   line-height: 0px;
 }
 .social-icons h2 {
@@ -424,6 +463,11 @@ body {
   position: absolute;
   font-weight: 400;
   color: white;
+  top: 30px;
+  z-index: 99;
+  width: 100%;
+  height: 30px;
+  text-align: center;
   line-height: 40px;
 }
 .social-logo {
@@ -436,8 +480,12 @@ body {
   position: relative;
   max-width: 100%;
   font-size: 12px;
+  text-align: center;
+  padding: 1% 0px 1% 0px;
   color: white;
-  top: 15px;
+  background-color: #1e1e1e;
+  width: 100%;
+  top: 10px;
 }
 @media only screen and (max-width: 800px) {
   .parent-header {
@@ -445,15 +493,39 @@ body {
     position: relative;
     top: 0px;
   }
-  html,
+  .homepage-image-container {
+    margin: 0;
+    width: 120%;
+    top: 0px;
+  }
+  /* html,
   body {
     overflow-x: visible;
-  }
+  } */
   .top-icon {
     display: none;
   }
-  .homepage-image {
-    margin-top: 0px;
+  .top-text {
+    top: 55%;
+  }
+
+  .top-text .first {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .top-text .second {
+    padding: 10px 0px 15px 0px;
+    font-size: 15.5px;
+  }
+  .top-text .learn-more {
+    background-color: #008fbb;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    border-radius: 7px;
+    padding: 5px 15px 5px 15px;
   }
   .hamburger-menu {
     cursor: pointer;
@@ -507,9 +579,10 @@ body {
     position: relative;
     top: 0px;
   }
+
   .hamburger-menu h1 {
     cursor: pointer;
-    font-size: 100%;
+    font-size: 14px;
     font-weight: 500;
     color: white;
     /* background-color: #023365; */
@@ -524,11 +597,6 @@ body {
   .hamburger-menu h1:hover {
     border-radius: 3px;
     background-color: rgba(0, 128, 255, 0.24);
-  }
-  .welcome {
-    font-size: 1.5rem;
-    margin-top: 55%;
-    color: rgb(255, 255, 255);
   }
   .welcome-div {
     padding-bottom: 5%;
@@ -548,7 +616,7 @@ body {
   .welcome-to-church {
     grid-template-columns: repeat(1, 1fr);
     position: relative;
-    top: 20px;
+    top: 55px;
     margin: 10px 15px 0px 15px;
     display: grid;
     gap: 1rem;
@@ -588,6 +656,9 @@ body {
   .testimonies-items {
     top: 20px;
   }
+  .partners-div {
+    top: 120px;
+  }
   .quotes {
     top: 100px;
   }
@@ -608,22 +679,28 @@ body {
     font-size: 90%;
   }
   .copyright {
-    top: 30px;
+    top: 15px;
     /* padding-bottom: 5px; */
   }
   .footer-base .church-name {
     text-align: center;
-    font-size: 80%;
+    font-size: 100%;
   }
   .ig-and-fb {
-    top: 20px;
+    top: 27px;
   }
   .social-icons h2 {
     top: 30px;
   }
   .routes {
-    padding: 2px 7px 2px 7px;
-    border: 1px solid rgba(255, 255, 255);
+    font-size: 85%;
+    padding: 2px 1px 2px 1px;
+    border: none;
+  }
+  .routes:hover {
+    cursor: pointer;
+    color: #41f0d1;
+    background-color: rgba(255, 255, 255, 0);
   }
 
   .quick-links li {
@@ -635,7 +712,7 @@ body {
       z-index: 99;
       width: 15px;
       right: 5%;
-      left: 84.8%;
+      left: 85%;
       position: absolute;
       top: 16px;
     }
@@ -644,7 +721,7 @@ body {
       z-index: 99;
       width: 12px;
       right: 5%;
-      left: 84.9%;
+      left: 85.6%;
       right: 100px;
       position: absolute;
       top: 18px;
@@ -653,6 +730,9 @@ body {
   @media only screen and (max-width: 460px) {
     .quick-links li {
       font-size: 75%;
+    }
+    .hamburger-menu h1 {
+      font-size: 80%;
     }
   }
 }

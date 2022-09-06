@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaArrowUp } from "react-icons/fa";
 
 const BackToTopButton = () => {
@@ -34,3 +34,4 @@ const BackToTopButton = () => {
 };
 
 export default BackToTopButton;
+3;

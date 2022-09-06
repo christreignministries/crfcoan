@@ -3,6 +3,9 @@
 }
 .top-image {
   width: 100%;
+
+  filter: blur(2px);
+  position: relative;
 }
 .container {
   display: grid;
@@ -40,7 +43,6 @@
   padding: 8px 20px 8px 20px;
 }
 .church-image {
-  max-width: 100%;
   height: 745px;
   border-radius: 5px;
 }
@@ -78,6 +80,9 @@ hr {
 @media only screen and (max-width: 800px) {
   .parent {
     margin-top: 0px;
+  }
+  .top-image {
+    width: 105%;
   }
   .container {
     grid-template-columns: repeat(1, 1fr);
