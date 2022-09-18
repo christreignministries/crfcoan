@@ -1,0 +1,47 @@
+.devotional-image {
+  display: flex;
+  width: 100%;
+}
+.devotional-image {
+  object-fit: cover;
+}
+.message-text {
+  margin: 0px 5% 0px 5%;
+  font-size: 100%;
+}
+.paragraph {
+  margin: 5% 0px 5% 0px;
+  font-weight: 400;
+}
+.prev {
+  outline: none;
+  background-color: orange;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px 10px 15px;
+  margin: 0px 5% 5% 5%;
+}
+.next {
+  outline: none;
+  background-color: orange;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px 10px 15px;
+  margin: 0px 0% 5% 85%;
+}
+
+.prev:hover {
+  color: black;
+}
+.next:hover {
+  color: black;
+}
+@media only screen and (max-width: 800px) {
+  .devotional-image {
+    width: 150%;
+  }
+}

@@ -5,6 +5,7 @@
   width: 100%;
   filter: blur(2px);
   position: relative;
+  margin-bottom: 25px;
 }
 .first-header {
   font-weight: 500;
@@ -13,22 +14,32 @@
   top: 15px;
   line-height: 10px;
 }
+.homepage-image-container1 {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  position: relative;
+  padding: 0px 0px 0% 0px;
+  top: 0px;
+}
 .top-text1 {
-  filter: drop-shadow(3px 3px 3px #000000);
+  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5));
   z-index: 1;
   position: absolute;
   color: white;
   left: 7%;
   width: 80%;
   animation: slide 4s;
-  top: 70%;
+  top: 55%;
 }
 .top-text1 .first1 {
   font-size: 35px;
+  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5));
   font-weight: 600;
 }
 .top-text1 .second1 {
   padding: 10px 0px 15px 0px;
+  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5));
   font-size: 18px;
 }
 
@@ -105,6 +116,13 @@
 .contactfb {
   text-decoration: none;
   color: black;
+}
+.image-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  position: relative;
+  padding: 0px 0px 0% 0px;
 }
 .icons .fb-icon {
   padding: 10px 0px 10px 0px;
@@ -210,7 +228,15 @@ input::placeholder {
   z-index: 99;
   margin-bottom: 35px;
 }
-
+.info-tag {
+  font-size: 100%;
+  padding: 0px 0px 5px 0px;
+  color: rgb(0, 39, 168);
+}
+.number-link {
+  text-decoration: none;
+  color: black;
+}
 .input-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -234,7 +260,7 @@ input::placeholder {
     left: -36%;
   }
   .icons {
-    top: 31%;
+    top: 55%;
   }
   .contact-us-form {
     grid-template-columns: repeat(1, 1fr);
@@ -248,9 +274,8 @@ input::placeholder {
     width: 97.5%;
   }
   .top-text1 {
-    top: 65%;
+    top: 15%;
   }
-
   .top-text1 .first1 {
     font-size: 30px;
     font-weight: 600;
@@ -258,5 +283,10 @@ input::placeholder {
   .top-text1 .second1 {
     padding: 10px 0px 15px 0px;
     font-size: 15.5px;
+  }
+  .homepage-image-container1 {
+    margin: 0;
+    width: 120%;
+    top: 0px;
   }
 }

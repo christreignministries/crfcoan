@@ -3,7 +3,6 @@
 }
 .top-image {
   width: 100%;
-
   filter: blur(2px);
   position: relative;
 }
@@ -17,33 +16,49 @@
 }
 .church-name {
   color: rgba(4, 36, 68);
+  font-size: 200%;
 }
 .about-a {
   padding: 0px 5% 0px 5%;
 }
 .details {
-  font-size: 120%;
+  font-size: 110%;
   font-weight: 700;
 }
 .details h2 {
   color: black;
 }
 .about-a h2 {
-  font-size: 100%;
+  font-size: 120%;
+  width: 100%;
   margin-right: 10px;
   font-weight: 500;
 }
+.homepage-image-container1 {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  position: relative;
+  padding: 0px 0px 0% 0px;
+  top: -65px;
+}
+
 .details button {
   background-color: blue;
   border: none;
   color: white;
-  font-size: 15px;
+  font-size: 100%;
   border-radius: 10px;
   font-weight: 550;
   padding: 8px 20px 8px 20px;
 }
+.container .child {
+  background-color: red;
+  display: flex;
+}
 .church-image {
-  height: 745px;
+  object-fit: cover;
+  width: 100%;
   border-radius: 5px;
 }
 .about-pastors {

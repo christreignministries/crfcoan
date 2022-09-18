@@ -41,10 +41,14 @@
 .readmore {
   background-color: orange;
   border-radius: 5px;
+  cursor: pointer;
   padding: 5% 10% 5% 10%;
   margin: 0px 0px 5% 0px;
   outline: none;
   border: none;
+}
+.readmore:hover {
+  color: white;
 }
 .spinner {
   position: relative;

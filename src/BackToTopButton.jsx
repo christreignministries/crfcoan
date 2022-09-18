@@ -1,14 +1,14 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { FaArrowUp } from "react-icons/fa";
 
 const BackToTopButton = () => {
   const scrollUp = () => {
-    window.focus();
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
   };
+
   return (
     <div>
       <button
@@ -27,11 +27,10 @@ const BackToTopButton = () => {
         }}
         onClick={scrollUp}
       >
-        <FaArrowUp />
+        <FaArrowUp style={{ cursor: " pointer" }} />
       </button>
     </div>
   );
 };
 
 export default BackToTopButton;
-3;

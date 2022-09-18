@@ -73,7 +73,6 @@ class Home extends Component {
           </div>
           <img src={images[this.state.count]} className="homepage-image" />
         </div>
-
         <div className="welcome-to-church">
           <img src={ChurchImage} alt="church-image" />
 
@@ -129,7 +128,7 @@ class Home extends Component {
           <div className="top-text">
             <div className="first">Partner with GOD</div>
             <div className="second">
-              2 Corinthians 9:7b for God loveth a cheerful giver.(KJV)
+              2 Corinthians 9:7b for God loveth a cheerful giver
             </div>
             <Link to="/partnership" onClick={this.scrollUp}>
               <button className="learn-more">Read More</button>
@@ -137,7 +136,6 @@ class Home extends Component {
           </div>
           <img src={PartnerImage} className="partners-image" />
         </div>
-
         <div className="events-div">
           <h3 className="upcoming-program">UPCOMING PROGRAMS</h3>
           <div className="events-parent">
@@ -159,6 +157,21 @@ class Home extends Component {
           <h2 className="born-again">BE BORN AGAIN</h2>
           <h3 className="say-these-prayers">SAY THESE PRAYERS</h3>
           <h4 className="salvation-prayer">{prayer[0]}</h4>
+        </div>
+        <div className="facebook-video">
+          <iframe
+            className="video"
+            src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fweb.facebook.com%2FChristreignministries%2Fvideos%2F1091655311781771%2F&show_text=true&width=560&t=0"
+            width="560"
+            height="480"
+            style={{ border: "none", overflow: "hidden" }}
+            scrolling="no"
+            frameBorder="0"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+            data-show-text={true}
+            data-show-captions={true}
+            allowFullScreen={true}
+          ></iframe>
         </div>
 
         <Footer />

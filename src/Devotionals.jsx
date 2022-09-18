@@ -15,6 +15,7 @@ const Devotionals = () => {
     <div className="parent-bg">
       {/* <img src={ComingSoon} className="coming-soon" /> */}
       <hr className="ruler" />
+
       <div className="top-header">
         <h3>Category</h3>
         <h2 className="devotional">Devotionals</h2>
@@ -28,7 +29,6 @@ const Devotionals = () => {
               </div>
               <div className="div-text">
                 <div>
-                  <h3>Devotionals</h3>
                   <h2>Message Title</h2>
                   <h3>{items.message}</h3>
                   <Link to={items.link} onClick={scrollUp}>

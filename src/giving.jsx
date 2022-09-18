@@ -1,20 +1,18 @@
 import React, { useState } from "react";
 import "./giving.css";
-import ImageHeader from "./Images/images - 2022-08-25T111508.791.jpg";
+import ImageHeader from "./Images/images - 2022-09-06T222924.741.jpeg";
 import GivingImage from "./Images/images---2022-09-04T172252.jpg";
 import Footer from "./footer";
-import { Link } from "react-router-dom";
 
 const Giving = () => {
   const [display, setDisplay] = useState("block");
-  const [display2, setDisplay2] = useState("none");
   const [color, setColor] = useState("#00aeff");
   const [color2, setColor2] = useState("#042444");
   const [bankDisplay, setBankDisplay] = useState(false);
 
   const toggleDisplay = () => {
     setDisplay("block");
-    setDisplay2("none");
+
     setColor("#00aeff");
     setColor2("#042444");
     setBankDisplay(false);
@@ -22,33 +20,31 @@ const Giving = () => {
 
   const toggleDisplay2 = () => {
     setDisplay("none");
-    setDisplay2("block");
+
     setColor("#042444");
-    setBankDisplay(false);
+    setBankDisplay(!bankDisplay);
     setColor2("#00aeff");
   };
 
-  const toggleBankDisplay = () => {
-    setBankDisplay(!bankDisplay);
-  };
   return (
     <div className="giving-bg">
-      <div className="contact-us-parent">
-        <div className="top-text1">
-          <div className="first1">Partner with GOD</div>
-          <div className="second1">
-            2 Corinthians 9:7b for God loveth a cheerful giver.(KJV)
+      <div className="homepage-image-container1">
+        <div className="top-text">
+          <div className="first">Partner with GOD</div>
+          <div className="second">
+            2 Corinthians 9:7b for God loveth a cheerful giver
           </div>
         </div>
+        <img src={GivingImage} className="giving-image" />
       </div>
-      <img src={GivingImage} className="giving-image" />
+
       <div className="giving-header">
         <div
           className="items"
           onClick={toggleDisplay}
           style={{ backgroundColor: color }}
         >
-          Giving at CRFCOAN
+          Giving at INCREASE CITY(CRFCOAN)
         </div>
         <div
           className="items"
@@ -68,30 +64,32 @@ const Giving = () => {
               there may be meat in mine house, and prove me now herewith, saith
               the LORD of hosts, if I will not open you the windows of heaven,
               and pour you out a blessing, that [there shall] not [be room]
-              enough [to receive it]
+              enough [to receive it].
             </h3>
           </div>
         </div>
       </div>
-      <div style={{ display: display2 }}>
+      <div style={{ display: `${bankDisplay ? "" : "none"}` }}>
         <div className="account-details">
-          <div className="bank" onClick={toggleBankDisplay}>
-            Give
+          <div className="give-payment-account">
+            <a
+              href="https://paystack.com/pay/increase-giving"
+              className="online-payment"
+            >
+              <div className="pay-online">Pay Online</div>
+            </a>
+            <div className="pay-via-transfer">
+              <div className="bank-accounts">Project EcoBank 5811034038</div>
+              <div className="bank-accounts">Offering Access 0065675723</div>
+              <div className="bank-accounts">Partner's UBA 28110805625</div>
+              <div className="bank-accounts">Tithe Access 0067378664</div>
+              <div className="bank-accounts">Seed Access 0067380270</div>
+              <div className="bank-accounts">First Fruit 0086696220</div>
+            </div>
           </div>
-          <div
-            className="give-payment-account"
-            style={{ display: `${bankDisplay ? "block" : "none"}` }}
-          >
-            <div className="bank1">PROJECT 5811034038 ECOBANK</div>
-            <div className="bank1">OFFERING 0065675723 ACCESS BANK</div>
-            <div className="bank1">TITHE 0067378664 ACCESS BANK</div>
-            <div className="bank1">PARTNER'S 2110805625 UBA</div>
-            <div className="bank1">SEED 0067380270 ACCESS BANK</div>
-            <div className="bank1">FIRST FRUIT 0086696220 ACCESS BANK</div>
-          </div>
-          <Link to="/partnership" className="link">
+          {/* <Link to="/partnership" className="link">
             <div className="bank">Partnership</div>
-          </Link>
+          </Link> */}
         </div>
       </div>
       <Footer />

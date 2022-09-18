@@ -27,7 +27,7 @@ const Footer = () => {
         </h2>
         <h3 className="church-address">
           INCREASE CITY, Charlisco Phase 2, off NPA expressway, Warri, Delta
-          State, Nigeria
+          State, Nigeria.
         </h3>
         <div className="quick-links-parent">
           <ul className="quick-links">

@@ -1,10 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./contact.css";
 import Image from "./Images/IMG_5393.jpg";
 import { ClipLoader } from "react-spinners";
-import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaFacebook,
+  FaInstagram,
+  FaWhatsapp,
+} from "react-icons/fa";
 import Footer from "./footer";
 import axios from "axios";
+import {
+  addDoc,
+  collection,
+  getDoc,
+  doc,
+  setDoc,
+  getDocs,
+} from "firebase/firestore";
+import firestore from "./firebase";
 
 const ContactUs = () => {
   const [name, setName] = useState("");
@@ -14,44 +28,75 @@ const ContactUs = () => {
   const [warning, setWarning] = useState(false);
   const [button, setButton] = useState(false);
 
-  const resetInputValue = () => {
+  const resetInputValue = async () => {
     if (name.length <= 0 || phone.length < 10 || message.length <= 0) {
       setWarning(true);
+      // const querySnapshot = await getDocs(collection(firestore, "Testimonies"));
+      // querySnapshot.forEach((doc) => {
+      //   // doc.data() is never undefined for query doc snapshots
+      //   console.log(doc.id, " => ", doc.data());
+      // });
     } else {
       setSpinner(true);
       setButton(true);
+      setWarning(false);
       const data = {
         Name: name,
         Phone: phone,
         Details: message,
       };
-      axios
-        .post(
-          "https://sheet.best/api/sheets/3f7a705a-acd2-4360-914d-8c3ab1667e72",
-          data
-        )
-        .then((response) => {
-          console.log(response.status);
-          if (response.status === 200) {
-            setSpinner(false);
-            setWarning(false);
-            setButton(false);
-            setName("");
-            setPhone("");
-            setMessage("");
-          }
-        });
-    }
 
-    // alert(message.length);
+      // axios
+      //   .post(
+      //     "https://sheet.best/api/sheets/3f7a705a-acd2-4360-914d-8c3ab1667e72",
+      //     data
+      //   )
+      //   .then((response) => {
+      //     console.log(response.status);
+      //     if (response.status === 200) {
+      //       setSpinner(false);
+      //       setButton(false);
+      //       setName("");
+      //       setPhone("");
+      //       setMessage("");
+      //     }
+      //   });
+
+      try {
+        const cityRef = doc(firestore, "Testimonies", `${name}`);
+        setDoc(cityRef, {
+          Testimony: {
+            Name: name,
+            Phone_number: phone,
+            Message: message,
+          },
+        });
+      } catch (err) {
+        console.log(err);
+      }
+      setSpinner(false);
+      setButton(false);
+      setName("");
+      setPhone("");
+      setMessage("");
+      // const querySnapshot = await getDocs(collection(firestore, "Testimonies"));
+      // querySnapshot.forEach((doc) => {
+      //   // doc.data() is never undefined for query doc snapshots
+      //   console.log(doc.id, " => ", doc.data());
+      // });
+    }
   };
+
   return (
     <div className="contact-us-parent">
-      <div className="top-text1">
-        <div className="first1">For more enquiries</div>
-        <div className="second1">React out to us</div>
+      <div className="homepage-image-container1">
+        <div className="top-text">
+          <div className="first">For more enquiries</div>
+          <div className="second">React out to us</div>
+        </div>
+        <img src={Image} className="contact-us-image" />
       </div>
-      <img src={Image} className="contact-us-image" />
+
       <div className="header">
         <h3 className="first-header">WE'D LOVE TO HEAR FROM YOU</h3>
         <h1 className="second-header">CONTACT US</h1>
@@ -68,8 +113,12 @@ const ContactUs = () => {
               Increase City, Charlisco Phase 2, Off NPA Expressway, Warri, Delta
               State, Nigeria.
             </h4>
-            <h4 className="item-b">Phone Number</h4>
-            <h4 className="item-b">Custom email address</h4>
+            <h4 className="item-b">
+              <a href="tel:+2347033878309" className="number-link">
+                +234 703 387 8309
+              </a>
+            </h4>
+            <h4 className="item-b">christreign123@gmail.com</h4>
           </div>
           {/* <div className="icons">
             <FaFacebook className="fb-icon" />
@@ -115,7 +164,7 @@ const ContactUs = () => {
           <div className="input-item">
             <div className="input-grid">
               <div>
-                Names
+                <div className="info-tag">Names</div>
                 <input
                   className="name"
                   value={name}
@@ -124,7 +173,7 @@ const ContactUs = () => {
                 />
               </div>
               <div>
-                Phone Number
+                <div className="info-tag">Phone Number</div>
                 <input
                   className="phone"
                   placeholder="Please enter your phone number"
@@ -136,7 +185,7 @@ const ContactUs = () => {
             </div>
 
             <div>
-              Testimonies
+              <div className="info-tag"> Testimonies</div>
               <textarea
                 className="message"
                 value={message}
@@ -146,13 +195,16 @@ const ContactUs = () => {
             </div>
           </div>
           <div
+            style={{ display: `${spinner ? "" : "none"}` }}
+            className="cliploader"
+          >
+            <ClipLoader />
+          </div>
+          <div
             className="base-information"
-            style={{ display: `${warning ? "block" : "none"}` }}
+            style={{ display: `${warning ? "" : "none"}` }}
           >
             Please fill all input fields
-          </div>
-          <div style={{ display: `${spinner ? "block" : "none"}` }}>
-            <ClipLoader />
           </div>
 
           <button
@@ -166,7 +218,15 @@ const ContactUs = () => {
           </button>
         </div>
       </form>
-
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d325.5387994381768!2d5.729155586116927!3d5.581416767191477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x1040532a109dc17d%3A0xdff63ee47accb19b!2sEkpan%20I!3m2!1d5.5811015!2d5.7352478!5e1!3m2!1sen!2sng!4v1662740003496!5m2!1sen!2sng"
+        width="100%"
+        height="450"
+        style={{ border: 0 }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
       <Footer />
     </div>
   );

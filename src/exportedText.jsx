@@ -4,6 +4,7 @@ export const quotes = [
   `"God is not a joker"`,
   `"Christ cannot reign and things remain the same"`,
   `"May the best of your past become the least of your future"`,
+  `"The enemy of the lifting of sons is PRIDE. Proud people never go anywhere"`,
 ];
 
 export const testimonies = [
@@ -28,7 +29,7 @@ encounter with the man of GOD, no more itching, praise the LORD.
 ];
 
 export const prayer = [
-  `Today I confess Jesus, as my Lord and Saviour. I confess my sins and
+  `Today I confess with my mouth that Jesus is my Lord and Saviour. I confess my sins and
 ask for forgiveness. Please come into my heart as my Lord and
 saviour. Take complete control of my life and help me walk in your
 footsteps daily by the power of the Holy Spirit. Thank you Lord for

@@ -4,11 +4,14 @@ import Menu from "./Images/2976215.png";
 import { Link } from "react-router-dom";
 import MenuClose from "./Images/1907734.png";
 import TopIcons from "./topIcons";
+import { FaAngleUp, FaAngleDown } from "react-icons/fa";
 class Navigation extends Component {
   state = {
     display: "none",
     openMenuToggle: "block",
     closedMenuToggle: "none",
+    partnership: false,
+    giving: false,
   };
 
   toggleMenu = () => {
@@ -21,13 +24,22 @@ class Navigation extends Component {
       this.setState({ openMenuToggle: "block" });
       this.setState({ closedMenuToggle: "none" });
     }
+    this.setState({ partnership: false });
+  };
+  togglePartnerMenu = () => {
+    this.setState({ partnership: !this.state.partnership });
   };
 
+  toggleGiving = () => {
+    this.setState({ giving: !this.state.giving });
+  };
   clearMenu = () => {
     this.setState({ display: "none" });
     this.setState({ openMenuToggle: "block" });
     this.setState({ closedMenuToggle: "none" });
+    this.setState({ giving: false });
   };
+
   render() {
     return (
       <div className="parent-header">
@@ -54,31 +66,67 @@ class Navigation extends Component {
 
         <ul className="ul-menu">
           <li>
-            <Link to="/" className="routes" onClick={this.clearMenu}>
+            <Link
+              to="/"
+              className="routes"
+              onClick={() => this.setState({ giving: false })}
+            >
               Home
             </Link>
           </li>
           <li>
-            <Link to="/about" className="routes" onClick={this.clearMenu}>
+            <Link
+              to="/about"
+              className="routes"
+              onClick={() => this.setState({ giving: false })}
+            >
               About
             </Link>
           </li>
           <li>
-            <Link to="/Devotionals" className="routes" onClick={this.clearMenu}>
+            <Link
+              to="/Devotionals"
+              className="routes"
+              onClick={() => this.setState({ giving: false })}
+            >
               Devotionals
             </Link>
           </li>
           <li>
-            <Link to="/contact-us" className="routes" onClick={this.clearMenu}>
+            <Link
+              to="/contact-us"
+              className="routes"
+              onClick={() => this.setState({ giving: false })}
+            >
               Contact us
             </Link>
           </li>
-          <li>
-            <Link to="/giving" className="routes" onClick={this.clearMenu}>
-              Giving
-            </Link>
+          <li className="giving" onClick={this.toggleGiving}>
+            <div className="giving-sub" onClick={this.toggleGiving}>
+              <h4 className="h4">
+                Giving
+                {this.state.giving ? (
+                  <FaAngleUp className="giving-angle" />
+                ) : (
+                  <FaAngleDown className="giving-angle" />
+                )}
+              </h4>
+            </div>
+
+            <div
+              className="partnership-parent"
+              style={{ opacity: `${this.state.giving ? 1 : 0}` }}
+            >
+              <Link to="/partnership" className="giving-route">
+                <h5 className="a">Partnership</h5>
+              </Link>
+              <Link to="/giving" className="giving-route">
+                <h5 className="a1">Others</h5>
+              </Link>
+            </div>
           </li>
         </ul>
+
         <div
           className="hamburger-menu"
           style={{ display: `${this.state.display}` }}
@@ -89,7 +137,6 @@ class Navigation extends Component {
           <Link to="/about" className="routes-b" onClick={this.clearMenu}>
             <h1>About</h1>
           </Link>
-
           <Link to="/Devotionals" className="routes-b" onClick={this.clearMenu}>
             <h1>Devotionals</h1>
           </Link>
@@ -97,8 +144,32 @@ class Navigation extends Component {
             <h1>Contact us</h1>
           </Link>
 
+          <h1 onClick={this.togglePartnerMenu} className="routes-b">
+            Giving{" "}
+            {this.state.partnership ? (
+              <FaAngleUp className="fa-angle" />
+            ) : (
+              <FaAngleDown className="fa-angle" />
+            )}
+          </h1>
+
+          <Link to="/partnership" className="routes-b" onClick={this.clearMenu}>
+            <h1
+              style={{
+                display: `${this.state.partnership ? "block" : "none"}`,
+              }}
+            >
+              Partnership
+            </h1>
+          </Link>
           <Link to="/giving" className="routes-b" onClick={this.clearMenu}>
-            <h1>Giving</h1>
+            <h1
+              style={{
+                display: `${this.state.partnership ? "block" : "none"}`,
+              }}
+            >
+              Others
+            </h1>
           </Link>
         </div>
       </div>

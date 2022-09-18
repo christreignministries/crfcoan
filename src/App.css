@@ -2,18 +2,27 @@ body {
   margin: 0;
   overflow-y: hidden;
   overflow-x: hidden;
+
+  background-image: url("http://127.0.0.1:5173/crfcoan/src/Images/images---2022-09-06T223218.jpg");
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 ::-webkit-scrollbar {
   width: 0;
 }
+
+.giving {
+  cursor: pointer;
+}
+
 html {
   margin: 0;
   overflow-y: auto;
   overflow-x: auto;
 }
-::-webkit-scrollbar-button {
-  background-color: red;
+.giving-angle {
+  position: relative;
+  top: 3px;
+  padding-left: 5px;
 }
 .top-text {
   z-index: 1;
@@ -38,10 +47,12 @@ html {
 .top-text .first {
   font-size: 35px;
   font-weight: 600;
+  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5));
 }
 .top-text .second {
   padding: 10px 0px 15px 0px;
   font-size: 18px;
+  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5));
 }
 .top-text .learn-more {
   background-color: #008fbb;
@@ -85,10 +96,41 @@ html {
 .routes {
   text-decoration: none;
   color: white;
-  border: 1.5px solid rgb(255, 255, 255);
-  border-radius: 5px;
+  /* border: 1.5px solid rgb(255, 255, 255);
+  border-radius: 5px; */
   font-size: 80%;
   padding: 5px 15px 5px 15px;
+}
+
+.partnership-parent {
+  position: relative;
+  z-index: 99;
+  top: 65px;
+  left: -50%;
+  font-size: 90%;
+}
+.fa-angle {
+  position: relative;
+  top: 3px;
+  left: 2px;
+}
+.partnership-parent .a {
+  background-color: rgba(245, 245, 245);
+  border-radius: 5px;
+  color: black;
+  padding: 5px 15px 5px 15px;
+}
+
+.giving-route {
+  text-decoration: none;
+}
+.partnership-parent .a1 {
+  position: relative;
+  padding: 5px 15px 5px 15px;
+  top: -10px;
+  border-radius: 5px;
+  color: black;
+  background-color: rgba(245, 245, 245);
 }
 .routes-b {
   text-decoration: none;
@@ -98,6 +140,7 @@ html {
 .routes:hover {
   cursor: pointer;
   color: rgb(7, 20, 33);
+  border-radius: 5px;
   background-color: rgb(255, 255, 255);
 }
 .hamburger,
@@ -124,21 +167,36 @@ html {
 .ul-menu {
   position: relative;
   display: flex;
-  top: -65px;
+  left: 5%;
+  top: -120px;
   justify-content: center;
   list-style: none;
   text-align: center;
 }
 .ul-menu li {
   color: rgb(255, 255, 255);
-  font-size: 80%;
+  font-size: 120%;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 40px;
+  margin-left: 20px;
 }
-
+.giving .h4 {
+  font-size: 80%;
+  font-weight: 100;
+  cursor: pointer;
+  z-index: 99;
+  padding: 5px 15px 5px 15px;
+  cursor: pointer;
+}
+.giving-sub {
+  z-index: 99;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  cursor: pointer;
+}
 @keyframes slide {
   from {
     opacity: 0.1;
@@ -276,7 +334,7 @@ html {
   color: white;
   border-radius: 5px;
   border: none;
-  padding: 10px 10px 10px 15px;
+  padding: 10px 15px 10px 15px;
   position: relative;
   top: 10%;
   left: 0%;
@@ -486,6 +544,11 @@ html {
   background-color: #1e1e1e;
   width: 100%;
   top: 10px;
+}
+.facebook-video {
+  display: flex;
+  justify-content: center;
+  margin: 0px 0px 1% 0px;
 }
 @media only screen and (max-width: 800px) {
   .parent-header {
@@ -706,6 +769,9 @@ html {
   .quick-links li {
     font-size: 100%;
   }
+  .video {
+    height: 320px;
+  }
   @media only screen and (max-width: 600px) {
     .hamburger {
       display: block;
@@ -721,7 +787,7 @@ html {
       z-index: 99;
       width: 12px;
       right: 5%;
-      left: 85.6%;
+      left: 85.2%;
       right: 100px;
       position: absolute;
       top: 18px;
