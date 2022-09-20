@@ -17,8 +17,10 @@ import {
   doc,
   setDoc,
   getDocs,
+  serverTimestamp,
 } from "firebase/firestore";
 import firestore from "./firebase";
+import swal from "sweetalert";
 
 const ContactUs = () => {
   const [name, setName] = useState("");
@@ -28,7 +30,8 @@ const ContactUs = () => {
   const [warning, setWarning] = useState(false);
   const [button, setButton] = useState(false);
 
-  const resetInputValue = async () => {
+  const resetInputValue = async (event) => {
+    event.preventDefault();
     if (name.length <= 0 || phone.length < 10 || message.length <= 0) {
       setWarning(true);
       // const querySnapshot = await getDocs(collection(firestore, "Testimonies"));
@@ -69,16 +72,24 @@ const ContactUs = () => {
             Name: name,
             Phone_number: phone,
             Message: message,
+            TimeStamp: serverTimestamp(),
           },
         });
       } catch (err) {
-        console.log(err);
+        // console.log(err);
+        swal("Please resubmit your testimony, there was an error");
       }
-      setSpinner(false);
-      setButton(false);
+
+      setSpinner(true);
+      setButton(true);
       setName("");
       setPhone("");
       setMessage("");
+      setTimeout(() => {
+        swal(`${name}, your testimony has been submitted, stay blessed.`);
+        setSpinner(false);
+        setButton(false);
+      }, 2000);
       // const querySnapshot = await getDocs(collection(firestore, "Testimonies"));
       // querySnapshot.forEach((doc) => {
       //   // doc.data() is never undefined for query doc snapshots
