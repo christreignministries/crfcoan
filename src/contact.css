@@ -199,11 +199,13 @@ input::placeholder {
   width: 90%;
 }
 .name {
+  font-size: 13px;
   width: 99%;
   margin: 0px 0px 10px 0px;
   height: 40px;
 }
 .phone {
+  font-size: 13px;
   width: 99%;
   margin: 0px 0px 10px 0px;
   height: 40px;

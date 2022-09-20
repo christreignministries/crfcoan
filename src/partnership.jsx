@@ -11,6 +11,7 @@ import {
   doc,
   setDoc,
   getDocs,
+  serverTimestamp,
 } from "firebase/firestore";
 import firestore from "./firebase";
 
@@ -30,14 +31,11 @@ const Partnership = () => {
 
   const buttonSubmit = async (event) => {
     event.preventDefault();
-
     if (
       name.length <= 0 ||
       number.length < 10 ||
       country.length < 0 ||
-      state.length < 0 ||
       birth.length === 0 ||
-      email.length < 5 ||
       address.length < 0
     ) {
       setWarning(true);
@@ -78,14 +76,16 @@ const Partnership = () => {
             DateOfBirth: birth,
             Level: level,
             Address: address,
-            Email: email,
+            // Email: email,
             Gender: gender,
-            State: state,
+            // State: state,
             Country: country,
+            TimeStamp: serverTimestamp(),
           },
         });
       } catch (err) {
-        console.log(err);
+        // console.log(err);
+        swal("Please resubmit your testimony, there was an error");
       }
       setButton(false);
       setSpinner(false);
@@ -98,12 +98,17 @@ const Partnership = () => {
       setNumber("");
       setAddress("");
       setEmail("");
+
       // const querySnapshot = await getDocs(collection(firestore, "Partner"));
       // querySnapshot.forEach((doc) => {
       //   doc.data() is never undefined for query doc snapshots
       //   console.log(doc.id, " => ", doc.data());
       // });
-      window.location.href = `https://paystack.com/pay/${level}-partnership`;
+      setTimeout(() => {
+        swal("Partnership details submitted");
+
+        window.location.href = `https://paystack.com/pay/${level}-partnership`;
+      }, 2000);
     }
   };
   return (
@@ -163,12 +168,12 @@ const Partnership = () => {
               value={country}
               onChange={(event) => setCountry(event.target.value)}
             />
-            <input
+            {/* <input
               placeholder="State"
               className="partner"
               value={state}
               onChange={(event) => setState(event.target.value)}
-            />
+            /> */}
 
             <input
               type="text"
@@ -233,12 +238,12 @@ const Partnership = () => {
               </div>
             </div>
 
-            <input
+            {/* <input
               placeholder="Email"
               className="partner-email-address"
               value={email}
               onChange={(event) => setEmail(event.target.value)}
-            />
+            /> */}
             <input
               placeholder="Address"
               className="partner-address"

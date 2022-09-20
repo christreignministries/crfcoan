@@ -17,7 +17,8 @@
     "react-router-dom": "^6.3.0",
     "react-social-icons": "^5.14.0",
     "react-spinner": "^0.2.7",
-    "react-spinners": "^0.13.4"
+    "react-spinners": "^0.13.4",
+    "sweetalert": "^2.1.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",
