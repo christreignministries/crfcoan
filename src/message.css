@@ -3,6 +3,7 @@
   width: 100%;
 }
 .devotional-image {
+  justify-content: center;
   object-fit: cover;
 }
 .message-text {
@@ -12,6 +13,22 @@
 .paragraph {
   margin: 5% 0px 5% 0px;
   font-weight: 400;
+}
+.message-title {
+  margin: 5% 0px -2% 0px;
+  font-weight: 600;
+  font-size: 150%;
+}
+.paragraph-a {
+  margin: 5% 0px 0% 0px;
+  font-weight: 600;
+}
+.benefits {
+  margin: 5% 0px 0% 0px;
+  font-weight: 600;
+}
+.benefits-child {
+  margin: 2% 0px 2% 0px;
 }
 .prev {
   outline: none;
@@ -42,6 +59,6 @@
 }
 @media only screen and (max-width: 800px) {
   .devotional-image {
-    width: 150%;
+    width: 100%;
   }
 }

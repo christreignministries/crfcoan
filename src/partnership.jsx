@@ -85,19 +85,10 @@ const Partnership = () => {
         });
       } catch (err) {
         // console.log(err);
-        swal("Please resubmit your testimony, there was an error");
+        swal("Please resubmit your details, there was an error");
       }
-      setButton(false);
-      setSpinner(false);
-      setName("");
-      setCountry("");
-      setBirth("");
-      setState("");
-      setLevel("");
-      setGender("bronze");
-      setNumber("");
-      setAddress("");
-      setEmail("");
+      setButton(true);
+      setSpinner(true);
 
       // const querySnapshot = await getDocs(collection(firestore, "Partner"));
       // querySnapshot.forEach((doc) => {
@@ -106,7 +97,17 @@ const Partnership = () => {
       // });
       setTimeout(() => {
         swal("Partnership details submitted");
-
+        setButton(false);
+        setSpinner(false);
+        setName("");
+        setCountry("");
+        setBirth("");
+        setState("");
+        setLevel("");
+        setGender("bronze");
+        setNumber("");
+        setAddress("");
+        setEmail("");
         window.location.href = `https://paystack.com/pay/${level}-partnership`;
       }, 2000);
     }

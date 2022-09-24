@@ -9,7 +9,7 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 import Footer from "./footer";
-import axios from "axios";
+// import axios from "axios";
 import {
   addDoc,
   collection,
@@ -47,6 +47,7 @@ const ContactUs = () => {
         Name: name,
         Phone: phone,
         Details: message,
+        TimeStamp: serverTimestamp(),
       };
 
       // axios
@@ -82,13 +83,14 @@ const ContactUs = () => {
 
       setSpinner(true);
       setButton(true);
-      setName("");
-      setPhone("");
-      setMessage("");
+
       setTimeout(() => {
-        swal(`${name}, your testimony has been submitted, stay blessed.`);
+        swal(`${name}`, "", "Your testimony has been submitted, stay blessed.");
         setSpinner(false);
         setButton(false);
+        setName("");
+        setPhone("");
+        setMessage("");
       }, 2000);
       // const querySnapshot = await getDocs(collection(firestore, "Testimonies"));
       // querySnapshot.forEach((doc) => {

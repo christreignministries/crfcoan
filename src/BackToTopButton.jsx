@@ -21,7 +21,7 @@ const BackToTopButton = () => {
           fontWeight: "700",
           fontSize: "15px",
           cursor: "pointer",
-          color: "rgba(4, 36, 68)",
+          color: "black",
           border: "none",
           padding: "5px 10px 2px 10px",
         }}

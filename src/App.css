@@ -122,6 +122,7 @@ html {
 }
 
 .giving-route {
+  color: white;
   text-decoration: none;
 }
 .partnership-parent .a1 {
@@ -183,8 +184,9 @@ html {
   margin-left: 20px;
 }
 .giving .h4 {
+  color: white;
   font-size: 80%;
-  font-weight: 100;
+  font-weight: 500;
   cursor: pointer;
   z-index: 99;
   padding: 5px 15px 5px 15px;
@@ -193,6 +195,7 @@ html {
 .giving-sub {
   z-index: 99;
   padding: 0;
+  color: white;
   margin: 0;
   position: relative;
   cursor: pointer;
@@ -550,6 +553,31 @@ html {
   justify-content: center;
   margin: 0px 0px 1% 0px;
 }
+.new-converts {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 5% 5% 2% 5%;
+}
+.get-started {
+  background-color: orange;
+  border-radius: 5px;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 2% 3% 2% 3%;
+  margin: 0px 30% 0px 30%;
+}
+.new-members {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  font-size: 80%;
+  width: 95%;
+  margin: 3% 0px 3% 0px;
+  padding: 4% 0px 4% 5%;
+}
 @media only screen and (max-width: 800px) {
   .parent-header {
     height: 45px;
@@ -558,7 +586,7 @@ html {
   }
   .homepage-image-container {
     margin: 0;
-    width: 120%;
+    width: 125%;
     top: 0px;
   }
   /* html,
@@ -771,6 +799,10 @@ html {
   }
   .video {
     height: 320px;
+  }
+
+  .facebook-video {
+    margin-bottom: -7%;
   }
   @media only screen and (max-width: 600px) {
     .hamburger {

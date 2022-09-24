@@ -7,6 +7,18 @@ import { Link } from "react-router-dom";
 import { quotes, testimonies, prayer } from "./exportedText";
 import { FaQuoteLeft } from "react-icons/fa";
 import PartnerImage from "./Images/IMG_3177.jpg";
+import swal from "sweetalert";
+import {
+  addDoc,
+  collection,
+  getDoc,
+  doc,
+  setDoc,
+  getDocs,
+  serverTimestamp,
+} from "firebase/firestore";
+import firestore from "./firebase";
+import Swal from "sweetalert2";
 
 class Home extends Component {
   state = {
@@ -16,6 +28,9 @@ class Home extends Component {
     readmore2: true,
     readmore2b: 157,
     readmore2b1: true,
+    name: "",
+    email: "",
+    number: "",
   };
 
   componentDidMount = () => {
@@ -52,6 +67,45 @@ class Home extends Component {
     } else {
       this.setState({ readmore2b: 150, readmore2b1: true });
     }
+  };
+
+  getStarted = () => {
+    Swal.fire({
+      confirmButtonText: "Submit",
+      html: `
+      <div>
+      CONGRATULATIONS!
+    <h3>Welcome to the Reigning Family!</h3>  
+      </div>
+          <input type="text" id="name" placeholder="Please enter your names"class="new-members"/>
+          <input type="number" id="number" placeholder="Please enter your phone number"  class="new-members"/>
+          <input type="text" id="email" placeholder="Please enter your email-address" class="new-members"/>
+        `,
+    }).then(() => {
+      const name = document.getElementById("name").value;
+      const number = document.getElementById("number").value;
+      const email = document.getElementById("email").value;
+
+      if (name.length < 1 && number.length < 10 && email.length < 1) {
+        Swal.fire("Form not submitted", "", "warning");
+      } else {
+        try {
+          const cityRef = doc(firestore, "Believers", `${name}`);
+          setDoc(cityRef, {
+            Testimony: {
+              Name: name,
+              Number: number,
+              Email: email,
+              TimeStamp: serverTimestamp(),
+            },
+          });
+          Swal.fire("Form submitted", "", "success");
+        } catch (err) {
+          // console.log(err);
+          swal("Please resubmit your details");
+        }
+      }
+    });
   };
 
   render() {
@@ -172,6 +226,12 @@ class Home extends Component {
             data-show-captions={true}
             allowFullScreen={true}
           ></iframe>
+        </div>
+        <div className="new-converts">
+          <h3>Become a believer today</h3>
+          <button className="get-started" onClick={this.getStarted}>
+            Get Started
+          </button>
         </div>
 
         <Footer />

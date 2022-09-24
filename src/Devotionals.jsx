@@ -29,8 +29,8 @@ const Devotionals = () => {
               </div>
               <div className="div-text">
                 <div>
-                  <h2>Message Title</h2>
-                  <h3>{items.message}</h3>
+                  <h2>{items.title}</h2>
+                  <div>{items.message}</div>
                   <Link to={items.link} onClick={scrollUp}>
                     <button className="readmore">Read More</button>
                   </Link>
