@@ -2,8 +2,7 @@ body {
   margin: 0;
   overflow-y: hidden;
   overflow-x: hidden;
-
-  background-image: url("http://127.0.0.1:5173/crfcoan/src/Images/images---2022-09-06T223218.jpg");
+  background-image: url("https://127.0.0.1:5173/crfcoan/src/Images/images---2022-09-06T223218.jpg");
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 ::-webkit-scrollbar {
@@ -29,7 +28,7 @@ html {
   position: absolute;
   color: white;
   left: 7%;
-  width: 75%;
+  width: 70%;
   animation: slide 4s;
   top: 45%;
 }
@@ -41,17 +40,26 @@ html {
   padding: 0px 0px 0% 0px;
   top: -65px;
 }
-.homepage-image-container .homepage-image {
-  filter: blur(1px);
+.church-name-header {
+  color: white;
+  text-align: center;
+  display: none;
+  z-index: 99;
+  font-size: 75%;
+  position: relative;
+  top: 14px;
+}
+.homepage-image {
+  filter: blur(2px);
 }
 .top-text .first {
-  font-size: 35px;
+  font-size: 150%;
   font-weight: 600;
   filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5));
 }
 .top-text .second {
   padding: 10px 0px 15px 0px;
-  font-size: 18px;
+  font-size: 100%;
   filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5));
 }
 .top-text .learn-more {
@@ -405,13 +413,35 @@ html {
   justify-content: center;
   align-items: center;
 }
-.events-div .upcoming-program {
-  font-size: 150%;
+.upcoming-program {
   position: relative;
   top: 10px;
+  display: flex;
   color: blue;
+  font-size: 90%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
+.view-more {
+  background-color: orange;
+  color: white;
 
+  font-size: 70%;
+  border-radius: 5px;
+  position: relative;
+  left: 5%;
+  cursor: pointer;
+  padding: 1% 2% 1% 2%;
+  text-decoration: none;
+  font-weight: 500;
+}
+.view-link {
+  text-decoration: none;
+}
+.view-more:hover {
+  color: black;
+}
 .event-image-flex {
   display: flex;
 }
@@ -432,27 +462,35 @@ html {
 }
 .born-again {
   font-weight: 600;
+  text-align: center;
   color: blue;
+  font-size: 130%;
 }
 .say-these-prayers {
   font-weight: 600;
+  text-align: center;
+  font-size: 125%;
 }
 .salvation-prayer {
-  font-size: 20px;
+  font-size: 125%;
   font-weight: 500;
-}
-.footer-body {
-  position: relative;
-  top: -10px;
-  background-color: rgb(245, 245, 245);
-  margin: 20px 20px 20px 20px;
-  padding: 5px 20px 5px 20px;
   text-align: center;
+  margin: 0% 5% 3% 5%;
+}
+.become-a-believer {
+  font-size: 100%;
+  margin: 3% 0% 1% 0%;
+}
+.quotes-text {
+  font-size: 110%;
+  font-weight: 700;
+  position: relative;
+  top: 14px;
 }
 .footer-base {
   position: relative;
   top: -30px;
-  height: 200px;
+  height: 185px;
 }
 .footer-parent {
   margin-top: auto;
@@ -462,6 +500,7 @@ html {
 .footer-base .church-name {
   cursor: pointer;
   color: #41f0d1;
+  background-color: #141414;
   padding-top: 15px;
   position: relative;
   display: flex;
@@ -469,24 +508,18 @@ html {
   font-size: 115%;
   line-height: 10px;
   font-weight: 700;
+  margin-top: 10%;
   top: 10px;
 }
-.footer-base h3 {
-  font-weight: 450;
-  color: #ffffff;
-  font-size: 100%;
-  position: relative;
+.footer-base .church-address {
+  font-size: 90%;
+  color: white;
   text-align: center;
-  padding: 0px 30px 0px 30px;
-  top: 10px;
-  font-weight: 400;
 }
 .quick-links-parent {
   position: relative;
   top: 16px;
-  display: flex;
-  justify-content: center;
-  right: 1%;
+  text-align: center;
 }
 .quick-links {
   list-style: none;
@@ -501,6 +534,7 @@ html {
   margin-left: 10px;
   font-size: 100%;
   cursor: pointer;
+  text-align: center;
   font-weight: 425;
 }
 .social-icons {
@@ -509,7 +543,7 @@ html {
   flex-direction: column;
   position: relative;
   background-color: #1e1e1e;
-  top: 40px;
+  top: 30px;
   padding-top: 5px;
 }
 .social-icons .connect {
@@ -558,7 +592,7 @@ html {
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  margin: 5% 5% 2% 5%;
+  margin: 6% 5% 2% 5%;
 }
 .get-started {
   background-color: orange;
@@ -566,6 +600,7 @@ html {
   color: white;
   outline: none;
   border: none;
+  font-size: 100%;
   padding: 2% 3% 2% 3%;
   margin: 0px 30% 0px 30%;
 }
@@ -579,6 +614,12 @@ html {
   padding: 4% 0px 4% 5%;
 }
 @media only screen and (max-width: 800px) {
+  .church-name-header {
+    display: block;
+  }
+  .church-logo {
+    top: -7px;
+  }
   .parent-header {
     height: 45px;
     position: relative;
@@ -597,11 +638,10 @@ html {
     display: none;
   }
   .top-text {
-    top: 55%;
+    top: 45%;
   }
-
   .top-text .first {
-    font-size: 30px;
+    font-size: 125%;
     font-weight: 600;
   }
   .top-text .second {
@@ -697,7 +737,6 @@ html {
   }
   .testimonies-items {
     grid-template-columns: repeat(1, 1fr);
-
     display: grid;
     margin: -20px 15px 0px 15px;
     gap: 0rem;
@@ -715,7 +754,9 @@ html {
   .welcome-to-church div {
     font-size: 20px;
     border-radius: 10px;
-    line-height: 25px;
+  }
+  .upcoming-program {
+    font-size: 80%;
   }
   .grid-a {
     height: 250px;
@@ -762,12 +803,11 @@ html {
   .footer-base {
     position: relative;
     top: -40px;
+    height: 200px;
   }
+
   .footer-base .church-name {
     font-size: 80%;
-  }
-  .footer-base .church-address {
-    font-size: 90%;
   }
   .copyright {
     top: 15px;
@@ -802,7 +842,18 @@ html {
   }
 
   .facebook-video {
-    margin-bottom: -7%;
+    margin-bottom: -8%;
+  }
+
+  .born-again {
+    font-size: 110%;
+  }
+  .say-these-prayers {
+    font-size: 90%;
+  }
+  .salvation-prayer {
+    font-size: 120%;
+    font-weight: 500;
   }
   @media only screen and (max-width: 600px) {
     .hamburger {
@@ -831,6 +882,27 @@ html {
     }
     .hamburger-menu h1 {
       font-size: 80%;
+    }
+  }
+  @media only screen and (max-width: 390px) {
+    .hamburger {
+      display: block;
+      z-index: 99;
+      width: 15px;
+      right: 5%;
+      left: 85.4%;
+      position: absolute;
+      top: 16px;
+    }
+    .hamburger-2 {
+      display: none;
+      z-index: 99;
+      width: 12px;
+      right: 5%;
+      left: 85.5%;
+      right: 100px;
+      position: absolute;
+      top: 18px;
     }
   }
 }

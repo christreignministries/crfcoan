@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.css";
 import ImageHeader from "./Images/IMG_7145.jpg";
-import Image from "./Images/IMG_3988.jpg";
+import Image from "./Images/IMG_0137.jpg";
 import PapaImage from "./Images/IMG_3710.jpg";
 import MamaImage from "./Images/Snr-Pst-Mama-Image-2.jpg";
 import Footer from "./footer";
@@ -13,7 +13,7 @@ const About = () => {
         <div className="homepage-image-container1">
           <div className="top-text">
             <div className="first">About Us</div>
-            <div className="second">Increase City(CRFCOAN)</div>
+            <div className="second">Increase City Church (CRFCOAN)</div>
           </div>
           <img src={ImageHeader} className="contact-us-image" />
         </div>
@@ -22,14 +22,10 @@ const About = () => {
             <img src={Image} alt="church-image" className="church-image" />
           </div>
           <div className="about-a">
-            <h1 className="church-name">
-              INCREASE CITY (Christ Reign Forever Church Of All Nations)
-            </h1>
+            <h1 className="church-name">INCREASE CITY CHURCH(CRFCOAN)</h1>
             <h2>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-              libero, alias ab quia perferendis quidem sit pariatur iste sint
-              dolores, autem corrupti id accusantium architecto expedita velit
-              molestiae quae quibusdam!
+              Increase City Church(Christ Reign Forever Church Of All Nations)
+              was founded day month year.
             </h2>
             <div className="details">
               <button>Our Mission</button>

@@ -9986,10 +9986,10 @@ const zm = () => {
                 }),
                 m("li", {
                   children: m(ie, {
-                    to: "/Devotionals",
+                    to: "/Sermon",
                     className: "routes",
                     onClick: e,
-                    children: "Devotionals",
+                    children: "Sermon",
                   }),
                 }),
                 m("li", {
@@ -10239,10 +10239,10 @@ class jm extends A.exports.Component {
             }),
             m("li", {
               children: m(ie, {
-                to: "/Devotionals",
+                to: "/Sermon",
                 className: "routes",
                 onClick: this.clearMenu,
-                children: "Devotionals",
+                children: "Sermon",
               }),
             }),
             m("li", {
@@ -10280,10 +10280,10 @@ class jm extends A.exports.Component {
               children: m("h1", { children: "About" }),
             }),
             m(ie, {
-              to: "/Devotionals",
+              to: "/Sermon",
               className: "routes-b",
               onClick: this.clearMenu,
-              children: m("h1", { children: "Devotionals" }),
+              children: m("h1", { children: "Sermon" }),
             }),
             m(ie, {
               to: "/contact-us",
@@ -11975,7 +11975,7 @@ class t0 extends A.exports.Component {
             m(tn, { path: "/", element: m(Vm, {}) }),
             m(tn, { path: "/about", element: m(Im, {}) }),
             m(tn, { path: "/giving", element: m(Wm, {}) }),
-            m(tn, { path: "/Devotionals", element: m(Km, {}) }),
+            m(tn, { path: "/Sermon", element: m(Km, {}) }),
             m(tn, { path: "/contact-us", element: m(e0, {}) }),
           ],
         }),

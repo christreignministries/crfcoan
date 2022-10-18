@@ -65,6 +65,10 @@
 .link {
   text-decoration: none;
 }
+.giving-scripture {
+  padding: 5% 5% 0% 5%;
+  font-size: 150%;
+}
 .give-payment-account .bank1 {
   background-color: #1e1e1e;
   padding: 10px 10px 10px 10px;
@@ -104,6 +108,9 @@
   font-size: 150%;
   font-weight: 600;
 }
+.giving-scripture {
+  font-size: 95%;
+}
 .pay-via-transfer {
   background-color: #042444;
   display: grid;
@@ -116,6 +123,9 @@
 @media screen and (max-width: 800px) {
   .giving-bg {
     margin-top: 0px;
+  }
+  .items {
+    font-size: 80%;
   }
   .giving-at-crfcoan {
     margin: 20px 2% 20px 2%;

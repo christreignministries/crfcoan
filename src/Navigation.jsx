@@ -3,7 +3,6 @@ import Logo from "./Images/church logo-copy.png";
 import Menu from "./Images/2976215.png";
 import { Link } from "react-router-dom";
 import MenuClose from "./Images/1907734.png";
-import TopIcons from "./topIcons";
 import { FaAngleUp, FaAngleDown } from "react-icons/fa";
 class Navigation extends Component {
   state = {
@@ -44,6 +43,9 @@ class Navigation extends Component {
     return (
       <div className="parent-header">
         <div className="header-bg">
+          <div className="church-name-header">
+            Increase City Church (CRFCOAN)
+          </div>
           <Link to="/about" className="routes-b" onClick={this.clearMenu}>
             <img src={Logo} alt="church-logo" className="church-logo" />
           </Link>
@@ -63,7 +65,6 @@ class Navigation extends Component {
           />{" "}
           <div className="hamburger-bg" onClick={this.toggleMenu}></div>
         </div>
-
         <ul className="ul-menu">
           <li>
             <Link
@@ -85,11 +86,11 @@ class Navigation extends Component {
           </li>
           <li>
             <Link
-              to="/Devotionals"
+              to="/Sermon"
               className="routes"
               onClick={() => this.setState({ giving: false })}
             >
-              Devotionals
+              Sermon
             </Link>
           </li>
           <li>
@@ -99,6 +100,15 @@ class Navigation extends Component {
               onClick={() => this.setState({ giving: false })}
             >
               Contact us
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/programs"
+              className="routes"
+              onClick={() => this.setState({ giving: false })}
+            >
+              Program
             </Link>
           </li>
           <li className="giving" onClick={this.toggleGiving}>
@@ -126,7 +136,6 @@ class Navigation extends Component {
             </div>
           </li>
         </ul>
-
         <div
           className="hamburger-menu"
           style={{ display: `${this.state.display}` }}
@@ -137,8 +146,11 @@ class Navigation extends Component {
           <Link to="/about" className="routes-b" onClick={this.clearMenu}>
             <h1>About</h1>
           </Link>
-          <Link to="/Devotionals" className="routes-b" onClick={this.clearMenu}>
-            <h1>Devotionals</h1>
+          <Link to="/Sermon" className="routes-b" onClick={this.clearMenu}>
+            <h1>Sermon</h1>
+          </Link>
+          <Link to="/programs" className="routes-b" onClick={this.clearMenu}>
+            <h1>Programs</h1>
           </Link>
           <Link to="/contact-us" className="routes-b" onClick={this.clearMenu}>
             <h1>Contact us</h1>

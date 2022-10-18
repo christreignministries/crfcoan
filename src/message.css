@@ -17,7 +17,7 @@
 .message-title {
   margin: 5% 0px -2% 0px;
   font-weight: 600;
-  font-size: 150%;
+  font-size: 120%;
 }
 .paragraph-a {
   margin: 5% 0px 0% 0px;
@@ -48,11 +48,43 @@
   border: none;
   cursor: pointer;
   padding: 10px 15px 10px 15px;
-  margin: 0px 0% 5% 85%;
+  margin: 0px 0% 5% 80%;
 }
-
+.next2 {
+  outline: none;
+  background-color: orange;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px 10px 15px;
+  margin: 0px 0% 5% 60%;
+}
+/* .nextandprev {
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+} */
+/* mark {
+  background-color: rgb(255, 0, 0);
+} */
 .prev:hover {
   color: black;
+}
+.next2:hover {
+  color: black;
+}
+.search-button {
+  outline: none;
+  border: none;
+  padding: 0px 20px 0px 20px;
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-left: 5px;
+  height: 35px;
 }
 .next:hover {
   color: black;

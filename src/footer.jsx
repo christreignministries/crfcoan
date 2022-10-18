@@ -25,10 +25,10 @@ const Footer = () => {
           <FaMapMarkerAlt className="FaMapMarkerAlt" />
           INCREASE CITY (CRFCOAN)
         </h2>
-        <h3 className="church-address">
+        <div className="church-address">
           INCREASE CITY, Charlisco Phase 2, off NPA expressway, Warri, Delta
           State, Nigeria.
-        </h3>
+        </div>
         <div className="quick-links-parent">
           <ul className="quick-links">
             <li>
@@ -42,8 +42,8 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link to="/Devotionals" className="routes" onClick={scrollUp}>
-                Devotionals
+              <Link to="/Sermon" className="routes" onClick={scrollUp}>
+                Sermon
               </Link>
             </li>
             <li>
@@ -54,6 +54,16 @@ const Footer = () => {
             <li>
               <Link to="/giving" className="routes" onClick={scrollUp}>
                 Giving
+              </Link>
+            </li>
+            <li>
+              <Link to="/partnership" className="routes" onClick={scrollUp}>
+                Partnership
+              </Link>
+            </li>
+            <li>
+              <Link to="/programs" className="routes" onClick={scrollUp}>
+                Programs
               </Link>
             </li>
           </ul>

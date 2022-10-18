@@ -124,6 +124,38 @@ const Partnership = () => {
           </div>
           <img src={ImageHeader} className="giving-image" />
         </div>
+        <div className="our-mission">
+          <div>
+            <div className="mission">OUR MISSION</div>
+            <div id="mission-a">
+              1. To continuously win souls into the kingdom of GOD according to
+              the great commission (Matthew 28:16-20).
+            </div>
+            <div id="mission-a">
+              2. To teach the Lord's people how to be bold and have courage and
+              not easily moved, for He is always with us.
+            </div>
+            <div id="mission-a">
+              3. To stir up the body of Christ and equip them to do the work of
+              the ministry.
+            </div>
+          </div>
+        </div>
+        <div className="our-mission">
+          <div>
+            <div className="mission-b">BENEFITS OF BEING A PARTNER</div>
+            <div id="mission-a">1. You can never lose, it is always a win.</div>
+            <div id="mission-a">2. You gain entrance to God's wisdom.</div>
+            <div id="mission-a">
+              3. You grow in all areas especially spiritual growth. You cannot
+              partner with GOD and be spiritually dull.
+            </div>
+            <div id="mission-a">
+              4. You prosper in whatever you do if you are a genuine partner
+              with GOD.
+            </div>
+          </div>
+        </div>
         <div className="categories">
           <h3 className="h3-categories">CATEGORIES</h3>
           <div className="partner-levels">
@@ -262,7 +294,7 @@ const Partnership = () => {
             className="base-information2"
             style={{ display: `${warning ? "" : "none"}` }}
           >
-            Please check your input
+            Please fill the form correctly
           </div>
           <div className="submit-button">
             <button className="partner-submit-button" onClick={buttonSubmit}>

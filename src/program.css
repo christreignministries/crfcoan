@@ -1,0 +1,32 @@
+.program-div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: rgb(245, 245, 245);
+  color: white;
+  margin: 2% 2% 1% 2%;
+  gap: 1rem;
+  padding: 1.5% 1.5% 1.5% 1.5%;
+}
+
+.programs {
+  background-color: rgb(0, 38, 255);
+  border-radius: 5px;
+  font-size: 100%;
+  justify-content: center;
+  padding: 2% 3% 2% 3%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.program-search {
+  height: 35px;
+  width: 55%;
+  font-size: 100%;
+  margin: 2% 2% 0% 2%;
+}
+@media only screen and (max-width: 480px) {
+  .programs {
+    padding: 5% 4% 5% 4%;
+    font-size: 80%;
+  }
+}

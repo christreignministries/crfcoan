@@ -15,33 +15,32 @@
   gap: 1rem;
 }
 .church-name {
-  color: rgba(4, 36, 68);
-  font-size: 200%;
+  color: blue;
+  font-size: 150%;
 }
 .about-a {
   padding: 0px 5% 0px 5%;
 }
 .details {
-  font-size: 110%;
+  font-size: 100%;
   font-weight: 700;
 }
 .details h2 {
   color: black;
 }
 .about-a h2 {
-  font-size: 120%;
+  font-size: 100%;
   width: 100%;
   margin-right: 10px;
   font-weight: 500;
 }
-.homepage-image-container1 {
-  display: flex;
+/* .homepage-image-container1 {
   width: 100%;
   flex-direction: column;
   position: relative;
   padding: 0px 0px 0% 0px;
   top: -65px;
-}
+} */
 
 .details button {
   background-color: blue;
@@ -50,10 +49,9 @@
   font-size: 100%;
   border-radius: 10px;
   font-weight: 550;
-  padding: 8px 20px 8px 20px;
+  padding: 2% 3% 2% 3%;
 }
 .container .child {
-  background-color: red;
   display: flex;
 }
 .church-image {

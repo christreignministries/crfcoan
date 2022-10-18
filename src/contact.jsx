@@ -1,13 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./contact.css";
 import Image from "./Images/IMG_5393.jpg";
 import { ClipLoader } from "react-spinners";
-import {
-  FaEnvelope,
-  FaFacebook,
-  FaInstagram,
-  FaWhatsapp,
-} from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import Footer from "./footer";
 // import axios from "axios";
 import {
@@ -121,7 +116,7 @@ const ContactUs = () => {
 
         <div className="reach-flex">
           <div className="reach-us-through">
-            <h3 className="item-a">REACH US THROUGH</h3>
+            <h3 className="item-a">REACH US VIA</h3>
             <h4 className="item-b">
               Increase City, Charlisco Phase 2, Off NPA Expressway, Warri, Delta
               State, Nigeria.
@@ -131,7 +126,14 @@ const ContactUs = () => {
                 +234 703 387 8309
               </a>
             </h4>
-            <h4 className="item-b">christreign123@gmail.com</h4>
+            <h4 className="item-b">
+              <a
+                href="mailto:christreign@increasecity.org"
+                className="contactfb"
+              >
+                christreign@increasecity.org
+              </a>
+            </h4>
           </div>
           {/* <div className="icons">
             <FaFacebook className="fb-icon" />
@@ -172,7 +174,7 @@ const ContactUs = () => {
       <form>
         <div className="contact-us-form">
           <div className="prayer">
-            <h2 className="h2">SHARE YOUR TESTIMONIES</h2>
+            <h3 className="h2">SHARE YOUR TESTIMONIES</h3>
           </div>
           <div className="input-item">
             <div className="input-grid">
@@ -217,7 +219,7 @@ const ContactUs = () => {
             className="base-information"
             style={{ display: `${warning ? "" : "none"}` }}
           >
-            Please fill all input fields
+            Please fill the form correctly
           </div>
 
           <button

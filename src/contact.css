@@ -54,7 +54,7 @@
   font-weight: 400;
   font-size: 15px;
   position: relative;
-  padding: 0px 0px 0px 8%;
+  padding: 0px 0px 0px 4%;
   top: 40px;
   line-height: 20px;
 }
@@ -64,12 +64,11 @@
   position: relative;
   justify-items: center;
   top: 40px;
-  gap: 1rem;
   font-size: 80%;
 
   /* display: flex;
   justify-content: center; */
-  padding: 0px 8% 0px 8%;
+  padding: 0px 4% 0px 4%;
   animation: slide-in2 2s;
 }
 @keyframes slide-in2 {
@@ -98,10 +97,12 @@
 .reach-us-through .item-b {
   line-height: 20px;
   width: 100%;
+  font-size: 90%;
   font-weight: 400;
   /* padding: 0px 0px 0px 20px; */
 }
 .social-networks {
+  font-size: 90%;
   position: relative;
 }
 .social-networks .social-header {
@@ -259,7 +260,7 @@ input::placeholder {
     margin: 0px;
   }
   .underline {
-    left: -36%;
+    left: -33.5%;
   }
   .icons {
     top: 55%;
@@ -271,6 +272,10 @@ input::placeholder {
   }
   .b {
     top: 155px;
+  }
+  .item-b {
+    position: relative;
+    top: -5px;
   }
   .message {
     width: 97.5%;
@@ -288,7 +293,7 @@ input::placeholder {
   }
   .homepage-image-container1 {
     margin: 0;
-    width: 120%;
+    width: 130%;
     top: 0px;
   }
 }

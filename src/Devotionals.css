@@ -3,8 +3,8 @@
 }
 .coming-soon {
   max-width: 100%;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .ruler {
   background-color: rgb(0, 0, 0);
@@ -13,7 +13,6 @@
   top: 100px;
   width: 91%;
 }
-
 .top-header {
   font-size: 150%;
   line-height: 10px;
@@ -22,21 +21,31 @@
 .top-header .devotional {
   font-weight: 800;
 }
+.sermon-title {
+  font-size: 130%;
+  font-weight: 700;
+  margin-bottom: 2%;
+}
 .message-div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin: 0px 4% 4% 4%;
+  margin: -15px 4% 4% 4%;
   position: relative;
+  justify-items: center;
   top: 50%;
   gap: 1rem;
 }
 .div-picture {
-  display: flex;
+  object-fit: cover;
+  width: 65%;
 }
 .div-text {
   display: flex;
-  padding: 0px 0px 0px 7%;
+  padding: 0px 0px 0px 2%;
   align-items: center;
+}
+.audio {
+  outline: none;
 }
 .readmore {
   background-color: orange;
@@ -56,6 +65,16 @@
   left: 25%;
   z-index: 99;
 }
+/* .search-parent {
+  background-color: red;
+} */
+.sermon-search {
+  margin-top: 20px;
+  background-color: #eee;
+  width: 70%;
+  height: 35px;
+  font-size: 60%;
+}
 @media screen and (max-width: 800px) {
   .parent-bg {
     margin-top: 0px;
@@ -65,5 +84,8 @@
   }
   .spinner {
     left: 50%;
+  }
+  .div-picture {
+    width: 100%;
   }
 }

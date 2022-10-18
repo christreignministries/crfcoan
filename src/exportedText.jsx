@@ -1,4 +1,5 @@
 export const quotes = [
+  `"Anything gotten out of JESUS will soon become rubbish"`,
   `"You might miss God if you are too busy"`,
   `"If God can't break you, he can't use you"`,
   `"God is not a joker"`,

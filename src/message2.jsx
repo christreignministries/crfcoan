@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Swal from "sweetalert2";
 import Footer from "./footer";
 import MessageImage from "./Images/Message-cover-picture-b.jpg";
 import "./message.css";
@@ -18,7 +17,7 @@ const Message2 = () => {
         <hr className="ruler" />
         <div className="top-header">
           <h3>Category</h3>
-          <h2 className="devotional">Devotionals</h2>
+          <h2 className="devotional">Sermon</h2>
         </div>
         <div className="devotional-image">
           <img src={MessageImage} className="devotional-image" />
@@ -75,11 +74,18 @@ const Message2 = () => {
             expedita velit molestiae quae quibusdam!
           </div> */}
         </div>
-        <Link to="/Devotionals/message1">
-          <button className="prev" onClick={loadPrev}>
-            Previous
-          </button>
-        </Link>
+        <div className="nextandprev">
+          <Link to="/Sermon/God-is-looking-for-a-man">
+            <button className="prev" onClick={loadPrev}>
+              Previous
+            </button>
+          </Link>
+          <Link to="/Sermon/The-Mountain-Of-The-Lord">
+            <button className="next2" onClick={loadPrev}>
+              Next
+            </button>
+          </Link>
+        </div>
       </div>
       <Footer />
     </div>

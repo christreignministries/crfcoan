@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Footer from "./footer";
 import { Link } from "react-router-dom";
 import MessagePicture from "./Images/Message-cover-picture.jpg";
-
 import "./message.css";
 
 const Message1 = () => {
+  const [search, setSearch] = useState("");
   const loadNext = () => {
     window.scrollTo({
       top: 0,
@@ -13,25 +13,50 @@ const Message1 = () => {
     });
   };
 
+  // const testFunction = () => {
+  //   const test = document.getElementById("paragraph");
+  //   const originalText = test.innerHTML;
+  //   if (search.length > 0 && search !== " ") {
+  //     const word = search.trim();
+  //     const pattern = new RegExp(word, "g");
+  //     test.innerHTML = originalText.replace(pattern, `<mark>${word}</mark>`);
+  //   }
+  //   setSearch("");
+  // };
+
   return (
     <div>
       <div className="parent-bg">
         <hr className="ruler" />
         <div className="top-header">
           <h3>Category</h3>
-          <h2 className="devotional">Devotionals</h2>
+          <h2 className="devotional">Sermon</h2>
+          {/* <div className="search-parent">
+            <input
+              placeholder="Highlight a word in this sermon"
+              className="sermon-search"
+              value={search}
+              onChange={(event) => setSearch(event.target.value)}
+            />
+
+            <button onClick={testFunction} className="search-button">
+              Search
+            </button>
+          </div> */}
         </div>
         <div className="devotional-image">
           <img src={MessagePicture} className="devotional-image" />
         </div>
         <div className="message-text">
-          <div className="message-title">GOD IS LOOKING FOR A MAN</div>
+          <div className="message-title" id="message-title">
+            GOD IS LOOKING FOR A MAN
+          </div>
           <div className="paragraph-a">
             Text: DEUTERONOMY 7:1-10, 8:5, REVELATIONS 5:2.
           </div>
-          <div className="paragraph">
+          <div className="paragraph" id="paragraph">
             As months and days are passing on, so also generations are passing
-            on. God is not looking for men that capable but men that are
+            on. God is not looking for men that are capable but men that are
             available. You can never go far when you are far from God but you
             can go far when God finds you. You can't get results when you miss
             exam so also you can't get testimonies when you did not pass God's
@@ -46,7 +71,7 @@ const Message1 = () => {
           <div className="paragraph">
             WHY IS GOD LOOKING FOR A MAN? God is looking for a man because men
             are turning away from God daily.
-            <div className="benefits">BENEFITS OF ACCEPTING CHRIST</div>
+            <div className="mission-b">BENEFITS OF ACCEPTING CHRIST</div>
             <div className="benefits-child">
               1. He will love you(Deuteronomy 7:13). It is better for God to
               love you than the world to love you. God's love brings life, when
@@ -90,7 +115,7 @@ const Message1 = () => {
           </div> */}
         </div>
       </div>
-      <Link to="/Devotionals/message2">
+      <Link to="/Sermon/When-I-was-a-child">
         <button className="next" onClick={loadNext}>
           Next
         </button>

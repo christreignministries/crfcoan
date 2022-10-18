@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import { images } from "./exportedImage";
 import ChurchImage from "./Images/IMG_4979.jpg";
 import Footer from "./footer";
@@ -24,9 +24,9 @@ class Home extends Component {
   state = {
     count: 0,
     quotesCount: 0,
-    readmore1: 152,
+    readmore1: 133,
     readmore2: true,
-    readmore2b: 157,
+    readmore2b: 145,
     readmore2b1: true,
     name: "",
     email: "",
@@ -57,7 +57,7 @@ class Home extends Component {
     if (this.state.readmore2 === true) {
       this.setState({ readmore1: testimonies[1].length, readmore2: false });
     } else {
-      this.setState({ readmore1: 150, readmore2: true });
+      this.setState({ readmore1: 133, readmore2: true });
     }
   };
 
@@ -65,7 +65,7 @@ class Home extends Component {
     if (this.state.readmore2b1 === true) {
       this.setState({ readmore2b: testimonies[0].length, readmore2b1: false });
     } else {
-      this.setState({ readmore2b: 150, readmore2b1: true });
+      this.setState({ readmore2b: 145, readmore2b1: true });
     }
   };
 
@@ -115,13 +115,14 @@ class Home extends Component {
         <div className="homepage-image-container">
           {" "}
           <div className="top-text">
-            <div className="first">We follow GOD</div>
+            <div className="first">Christ Cannot Reign</div>
+            <div className="first">and things remain the same</div>
             <div className="second">
               {/* Grow up Spiritually. We are committed to the teaching and application of God's Word in
               all of life. */}
-              and nothing else.
+              {/* and things remain the same */}
             </div>
-            <Link to="/devotionals">
+            <Link to="/Sermon">
               <button className="learn-more">Learn More</button>
             </Link>
           </div>
@@ -133,8 +134,7 @@ class Home extends Component {
           <div className="grid-a">
             <div className="welcome-div">
               <h3 className="welcome-to-increase-city">
-                WELCOME TO INCREASE CITY (Christ Reign Forever Church Of All
-                Nations)
+                WELCOME TO INCREASE CITY CHURCH (CRFCOAN)
               </h3>
               <h4>
                 We are glad to have you here, we hope that you have a blessed
@@ -175,7 +175,7 @@ class Home extends Component {
         </div>
         <div className="quotes">
           <FaQuoteLeft className="quotes-left-icon" />
-          <h2 className="quotes-text">{quotes[quotesCount]}</h2>
+          <div className="quotes-text">{quotes[quotesCount]}</div>
           <p className="papa-name">Ehiebolo Godstime </p>
         </div>
         <div className="partners-div">
@@ -191,7 +191,14 @@ class Home extends Component {
           <img src={PartnerImage} className="partners-image" />
         </div>
         <div className="events-div">
-          <h3 className="upcoming-program">UPCOMING PROGRAMS</h3>
+          <div className="upcoming-program">
+            <h3>UPCOMING PROGRAMS</h3>
+
+            <Link to="/programs" className="view-more" onClick={this.scrollUp}>
+              VIEW MORE
+            </Link>
+          </div>
+
           <div className="events-parent">
             {Event.map((items, i) => {
               return (
@@ -228,7 +235,7 @@ class Home extends Component {
           ></iframe>
         </div>
         <div className="new-converts">
-          <h3>Become a believer today</h3>
+          <div className="become-a-believer">Become a believer today</div>
           <button className="get-started" onClick={this.getStarted}>
             Get Started
           </button>
