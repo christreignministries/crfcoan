@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./contact.css";
-import Image from "./Images/IMG_5393.jpg";
+import Image from "./Images/IMG_5067.jpg";
 import { ClipLoader } from "react-spinners";
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import Footer from "./footer";
@@ -102,7 +102,7 @@ const ContactUs = () => {
           <div className="first">For more enquiries</div>
           <div className="second">React out to us</div>
         </div>
-        <img src={Image} className="contact-us-image" />
+        <img src={Image} className="contact-us-image" alt="contact-us-image" />
       </div>
 
       <div className="header">

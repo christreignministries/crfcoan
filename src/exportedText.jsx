@@ -6,6 +6,9 @@ export const quotes = [
   `"Christ cannot reign and things remain the same"`,
   `"May the best of your past become the least of your future"`,
   `"The enemy of the lifting of sons is PRIDE. Proud people never go anywhere"`,
+  `"When you are addicted to GOD'S word, you cannot be guided by the world"`,
+  `"Your BIBLE is not for decoration but for studying"`,
+  `"Life on earth is nothing unless we live it for JESUS"`,
 ];
 
 export const testimonies = [
@@ -20,7 +23,7 @@ Secondly, few months ago I was having itching, I went to the hospital to do seve
 encounter with the man of GOD, no more itching, praise the LORD. 
 `,
   `I want to appreciate God for His goodness upon my life. The man of GOD 
-  taught how to use the name of Jesus on a wednesday service. That night I had a dream that I was sweeping 
+  taught how to use the name of Jesus on a wednesday service. That night I had a dream that I was sweeping
   my house so I mistakenly packed my hair brush in the waste bin and I threw it in the bush so I went out 
   in search of it. An old woman walked towards me and asked me what 
   I was looking for. I told her and she told me that I won’t find it there, rather I should go inside the 

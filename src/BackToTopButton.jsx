@@ -9,13 +9,12 @@ const BackToTopButton = () => {
     });
   };
   const displayFunction = () => {
-    setDisplay(true);
-    setTimeout(() => {
-      setDisplay(false);
-    }, 10000);
+    // setTimeout(() => {
+    //   setDisplay(false);
+    // }, 20000);
   };
 
-  const [display, setDisplay] = useState(false);
+  const [display, setDisplay] = useState(true);
 
   window.addEventListener("scroll", displayFunction);
 
@@ -37,7 +36,7 @@ const BackToTopButton = () => {
           zIndex: "99",
           outline: "none",
           border: "none",
-          padding: "7px 10px 3px 10px",
+          padding: "8px 11px 5px 11px",
         }}
         onClick={scrollUp}
       >

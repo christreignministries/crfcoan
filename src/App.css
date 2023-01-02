@@ -2,8 +2,9 @@ body {
   margin: 0;
   overflow-y: hidden;
   overflow-x: hidden;
-  background-image: url("https://127.0.0.1:5173/crfcoan/src/Images/images---2022-09-06T223218.jpg");
+  background-image: url("Images/images---2022-09-06T223218.jpg");
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Montserrat;
 }
 ::-webkit-scrollbar {
   width: 0;
@@ -34,7 +35,6 @@ html {
 }
 .homepage-image-container {
   display: flex;
-  width: 100%;
   flex-direction: column;
   position: relative;
   padding: 0px 0px 0% 0px;
@@ -50,7 +50,8 @@ html {
   top: 14px;
 }
 .homepage-image {
-  filter: blur(2px);
+  filter: blur(0px);
+  /* object-fit: cover; */
 }
 .top-text .first {
   font-size: 150%;
@@ -384,7 +385,7 @@ html {
   display: flex;
   position: relative;
   top: 100px;
-  height: 400px;
+  height: 500px;
   margin: 20px 0px 50px 0px;
 }
 .partners-div .partners-image {
@@ -816,6 +817,7 @@ html {
   .footer-base .church-name {
     text-align: center;
     font-size: 100%;
+    margin-top: 6%;
   }
   .ig-and-fb {
     top: 27px;

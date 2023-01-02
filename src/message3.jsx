@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Footer from "./footer";
-import MessageImage from "./Images/Message-cover-picture-b.jpg";
+import MessageImage from "./Images/The-Mountain-of-The-Lord-Cover-Image-Design.jpg";
 import "./message.css";
 
 const Message3 = () => {
@@ -19,7 +19,11 @@ const Message3 = () => {
           <h2 className="devotional">Sermon</h2>
         </div>
         <div className="devotional-image">
-          <img src={MessageImage} className="devotional-image" />
+          <img
+            src={MessageImage}
+            className="devotional-image"
+            alt="devotional-image"
+          />
         </div>
         <div className="message-text">
           <div className="message-title">THE MOUNTAIN OF THE LORD</div>
@@ -81,6 +85,11 @@ const Message3 = () => {
         <Link to="/Sermon/When-I-was-a-child">
           <button className="prev" onClick={loadPrev}>
             Previous
+          </button>
+        </Link>
+        <Link to="/Sermon/Unveiling-the-mysteries-of-voice">
+          <button className="next2" onClick={loadPrev}>
+            Next
           </button>
         </Link>
       </div>

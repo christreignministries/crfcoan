@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./giving.css";
 import ImageHeader from "./Images/images - 2022-09-06T222924.741.jpeg";
 import GivingImage from "./Images/images---2022-09-04T172252.jpg";
@@ -56,16 +56,20 @@ const Giving = () => {
       </div>
       <div style={{ display: display }}>
         <div className="giving-at-crfcoan">
-          <img src={ImageHeader} className="giving-image-2" />
+          <img
+            src={ImageHeader}
+            className="giving-image-2"
+            alt="giving-image"
+          />
 
-          <div>
-            <div className="giving-scripture">
+          <div className="giving-scripture">
+            <h3>
               Malachi 3:10 - Bring ye all the tithes into the storehouse, that
               there may be meat in mine house, and prove me now herewith, saith
               the LORD of hosts, if I will not open you the windows of heaven,
               and pour you out a blessing, that [there shall] not [be room]
               enough [to receive it].
-            </div>
+            </h3>
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./giving.css";
 import "./partnership.css";
 import { ClipLoader } from "react-spinners";
@@ -122,7 +122,7 @@ const Partnership = () => {
               2 Corinthians 9:7b for God loveth a cheerful giver
             </div>
           </div>
-          <img src={ImageHeader} className="giving-image" />
+          <img src={ImageHeader} className="giving-image" alt="giving-image" />
         </div>
         <div className="our-mission">
           <div>

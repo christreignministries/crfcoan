@@ -1,6 +1,5 @@
-import React from "react";
 import "./about.css";
-import ImageHeader from "./Images/IMG_7145.jpg";
+import ImageHeader from "./Images/IMG_4149.jpg";
 import Image from "./Images/IMG_0137.jpg";
 import PapaImage from "./Images/IMG_3710.jpg";
 import MamaImage from "./Images/Snr-Pst-Mama-Image-2.jpg";
@@ -15,11 +14,22 @@ const About = () => {
             <div className="first">About Us</div>
             <div className="second">Increase City Church (CRFCOAN)</div>
           </div>
-          <img src={ImageHeader} className="contact-us-image" />
+          <img
+            src={ImageHeader}
+            className="contact-us-image"
+            alt="contact-us-image"
+            loading="lazy"
+          />
         </div>
+
         <div className="container">
           <div className="child">
-            <img src={Image} alt="church-image" className="church-image" />
+            <img
+              src={Image}
+              alt="church-image"
+              className="church-image"
+              loading="lazy"
+            />
           </div>
           <div className="about-a">
             <h1 className="church-name">INCREASE CITY CHURCH(CRFCOAN)</h1>
@@ -59,13 +69,24 @@ const About = () => {
         </div>
         <div className="about-pastors">
           <div>
-            <img src={PapaImage} alt="papa-image" className="pastors-image" />
+            <img
+              src={PapaImage}
+              alt="papa-image"
+              className="pastors-image"
+              loading="lazy"
+            />
           </div>
           <div>
-            <img src={MamaImage} alt="mama-image" className="pastors-image" />
+            <img
+              src={MamaImage}
+              alt="mama-image"
+              className="pastors-image"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>
+
       <Footer />
     </div>
   );

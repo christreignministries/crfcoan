@@ -3,7 +3,7 @@
 }
 .contact-us-image {
   width: 100%;
-  filter: blur(2px);
+  filter: blur(0px);
   position: relative;
   margin-bottom: 25px;
 }

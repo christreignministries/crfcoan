@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import ProgramImage from "./Images/IMG_3749.jpg";
 import { program } from "./programExport";
 import "./program.css";
@@ -16,7 +16,7 @@ const Program = () => {
             {/* 2 Corinthians 9:7b for God loveth a cheerful giver */}
           </div>
         </div>
-        <img src={ProgramImage} className="giving-image" />
+        <img src={ProgramImage} className="giving-image" alt="program-image" />
       </div>
       <div>
         <div>

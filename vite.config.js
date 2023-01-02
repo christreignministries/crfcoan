@@ -10,9 +10,9 @@ export default defineConfig({
     react(),
     VitePWA({
       manifest: {
-        name: "Increase City",
+        name: "christreignministries",
         short_name: "christreignministries",
-        start_url: "/",
+        start_url: "https://www.increasecity.org",
         display: "standalone",
         theme_color: "#ffffff",
         background_color: "#ffffff",
@@ -26,24 +26,24 @@ export default defineConfig({
           },
           {
             src: "assets/church logo-copy.c3b1520a.png",
-            sizes: "144x144",
+            sizes: "200x200",
             type: "image/png",
           },
           {
             src: "assets/church logo-copy.c3b1520a.png",
-            sizes: "196x196",
+            sizes: "512x512",
             type: "image/png",
             purpose: "maskable",
           },
         ],
       },
-      // mode: "development",
+      mode: "development",
       registerType: "autoUpdate",
       injectRegister: "auto",
-      // devOptions: {
-      //   enabled: true,
-      //   type: "module",
-      // },
+      devOptions: {
+        enabled: true,
+        type: "module",
+      },
     }),
   ],
 });

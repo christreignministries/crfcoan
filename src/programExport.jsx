@@ -62,6 +62,6 @@ export const program = [
   {
     name: "Crossover service",
     date: "31st December",
-    time: "10PM",
+    time: "9PM",
   },
 ];

@@ -1,4 +1,3 @@
-import React from "react";
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 const TopIcons = () => {

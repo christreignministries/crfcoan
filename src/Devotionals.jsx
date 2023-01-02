@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Devotionals.css";
 import { DevotionalsImage } from "./DevotionalsExport";
 import { Link } from "react-router-dom";
@@ -15,7 +15,6 @@ const Devotionals = () => {
 
   return (
     <div className="parent-bg">
-      {/* <img src={ComingSoon} className="coming-soon" /> */}
       <hr className="ruler" />
 
       <div className="top-header">
@@ -42,7 +41,11 @@ const Devotionals = () => {
           return (
             <div className="message-div" key={i}>
               <div className="div-picture">
-                <img src={items.img} className="coming-soon" />
+                <img
+                  src={items.img}
+                  className="coming-soon"
+                  alt="devotional-image"
+                />
               </div>
               <div className="div-text">
                 <div>

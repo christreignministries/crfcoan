@@ -17,6 +17,7 @@
     "react-highlight-words": "^0.18.0",
     "react-icons": "^4.4.0",
     "react-router-dom": "^6.3.0",
+    "react-router-loading": "^1.0.0",
     "react-social-icons": "^5.14.0",
     "react-spinner": "^0.2.7",
     "react-spinners": "^0.13.4",
@@ -29,6 +30,7 @@
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.0.1",
     "vite": "^3.0.7",
+    "vite-plugin-compression": "^0.5.1",
     "vite-plugin-pwa": "^0.13.1"
   }
 }

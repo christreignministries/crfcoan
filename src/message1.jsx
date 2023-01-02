@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Footer from "./footer";
 import { Link } from "react-router-dom";
 import MessagePicture from "./Images/Message-cover-picture.jpg";
@@ -45,7 +45,11 @@ const Message1 = () => {
           </div> */}
         </div>
         <div className="devotional-image">
-          <img src={MessagePicture} className="devotional-image" />
+          <img
+            src={MessagePicture}
+            className="devotional-image"
+            alt="devotional-image"
+          />
         </div>
         <div className="message-text">
           <div className="message-title" id="message-title">
@@ -63,17 +67,17 @@ const Message1 = () => {
             exams.
           </div>
           <div className="paragraph">
-            Never you allow your mind to be where it wants to be, always push
-            your mind to where your mind can fit your dream. People will always
-            think you are wasting away until you keep yourself busy. Everybody
-            can't be a man but in every man there is a man.
+            Don't allow your mind to be where it wants to be, always push your
+            mind to where your mind can fit your dream. People will always think
+            you are wasting away until you keep yourself busy. Everybody can't
+            be a man but in every man there is a man.
           </div>
           <div className="paragraph">
             WHY IS GOD LOOKING FOR A MAN? God is looking for a man because men
             are turning away from God daily.
             <div className="mission-b">BENEFITS OF ACCEPTING CHRIST</div>
             <div className="benefits-child">
-              1. He will love you(Deuteronomy 7:13). It is better for God to
+              1. He will love you (Deuteronomy 7:13). It is better for God to
               love you than the world to love you. God's love brings life, when
               God love you then the world will love you. You can't reflect
               Christ and reflect delay/ poverty.
@@ -99,20 +103,11 @@ const Message1 = () => {
             </div>
           </div>
           <div className="paragraph">
-            Note: Every one of us has a destiny to fulfill, don't allow the gift
+            Note: Every one of us has a destiny to fulfil, don't allow the gift
             of another man to intimidate you. It is not every evil that happens
             to us that is caused by the devil. Don't tell your dream/ prophecy
             to a dream/ prophecy killer.
           </div>
-          {/* <div className="paragraph">
-            PRAYERS Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Modi libero, alias ab quia perferendis quidem sit pariatur iste sint
-            dolores, autem corrupti id accusantium architecto expedita velit
-            molestiae quae quibusdam! Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Modi libero, alias ab quia perferendis quidem sit
-            pariatur iste sint dolores, autem corrupti id accusantium architecto
-            expedita velit molestiae quae quibusdam!
-          </div> */}
         </div>
       </div>
       <Link to="/Sermon/When-I-was-a-child">
