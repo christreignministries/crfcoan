@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ProgramImage from "./Images/IMG_3749.jpg";
 import { program } from "./programExport";
+import NewYearImage from "./Images/Welcome-to-2023-Design-copy.jpg";
 import "./program.css";
 import Footer from "./footer";
 
@@ -11,12 +12,12 @@ const Program = () => {
     <div className="giving-bg">
       <div className="homepage-image-container1">
         <div className="top-text">
-          <div className="first">Program for year 2022</div>
+          {/* <div className="first">Program for year 2023</div> */}
           <div className="second">
             {/* 2 Corinthians 9:7b for God loveth a cheerful giver */}
           </div>
         </div>
-        <img src={ProgramImage} className="giving-image" alt="program-image" />
+        <img src={NewYearImage} className="giving-image" alt="program-image" />
       </div>
       <div>
         <div>

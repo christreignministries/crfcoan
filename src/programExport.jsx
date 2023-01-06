@@ -1,67 +1,92 @@
 export const program = [
   {
-    name: "Aligning with GOD",
-    date: "26th September to 3rd October",
+    name: "Life in the Spirit Seminar",
+    date: "2nd to 22nd January",
     time: "4PM",
-  },
-  {
-    name: "City Praise",
-    date: "28th - 30th September",
-    time: "4PM",
-  },
-  {
-    name: "Independence Celebration",
-    date: "2nd October",
-    time: "7AM",
   },
   {
     name: "Night of Solution",
-    date: "7th October",
+    date: "6th January",
     time: "10PM",
   },
   {
-    name: "Partner's meeting",
-    date: "30th October",
+    name: "Partners meeting",
+    date: "29th January",
     time: "11AM",
   },
   {
-    name: "Prayer for All Round Change",
-    date: "1st - 3rd November",
-    time: "5PM",
-  },
-  {
-    name: "Night of Solution",
-    date: "4th November",
-    time: "10PM",
-  },
-  {
-    name: "Prayer For All Round Change",
-    date: "1st - 3rd December",
-    time: "5PM",
-  },
-  {
-    name: "Night of Solution",
-    date: "2nd December",
-    time: "10PM",
-  },
-  {
-    name: "Increase Celebration",
-    date: "8th - 11th December",
-    time: "8AM & 4PM",
-  },
-  {
-    name: "Fasting and Prayers",
-    date: "12th - 18th December",
+    name: "Prayer for all round change",
+    date: "1st to 3rd February",
     time: "4PM",
   },
   {
-    name: "Fruit of the Womb",
-    date: "17th December",
-    time: "10AM",
+    name: "Night of Solution",
+    date: "3rd February",
+    time: "10PM",
   },
   {
-    name: "Crossover service",
-    date: "31st December",
-    time: "9PM",
+    name: "Partners meeting",
+    date: "25th February",
+    time: "11AM",
+  },
+  {
+    name: "Prayer for all round change",
+    date: "1st to 3rd March",
+    time: "4PM",
+  },
+  {
+    name: "Night of Solution",
+    date: "3rd March",
+    time: "10PM",
+  },
+  {
+    name: "Partners meeting",
+    date: "25th March",
+    time: "11AM",
+  },
+  {
+    name: "Prayer for all round change",
+    date: "1st to 3rd April",
+    time: "4PM",
+  },
+  {
+    name: "Night of Solution",
+    date: "7th April",
+    time: "10PM",
+  },
+  {
+    name: "Partners meeting",
+    date: "29th April",
+    time: "11AM",
+  },
+  {
+    name: "Prayer for all round change",
+    date: "1st to 3rd May",
+    time: "4PM",
+  },
+  {
+    name: "Night of Solution",
+    date: "5th May",
+    time: "10PM",
+  },
+  {
+    name: "Night of Solution",
+    date: "27th May",
+    time: "10PM",
+  },
+  {
+    name: "Prayer for all round change",
+    date: "1st to 3rd June",
+    time: "4PM",
+  },
+  {
+    name: "Night of solution",
+    date: "2nd June",
+    time: "10PM",
+  },
+  {
+    name: "Partners meeting",
+    date: "24th June",
+    time: "11AM",
   },
 ];

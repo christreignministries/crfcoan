@@ -22,7 +22,7 @@ const Giving = () => {
     setDisplay("none");
 
     setColor("#042444");
-    setBankDisplay(!bankDisplay);
+    setBankDisplay(true);
     setColor2("#00aeff");
   };
 

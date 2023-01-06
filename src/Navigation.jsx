@@ -108,7 +108,7 @@ class Navigation extends Component {
               className="routes"
               onClick={() => this.setState({ giving: false })}
             >
-              Program
+              Programs
             </Link>
           </li>
           <li className="giving" onClick={this.toggleGiving}>

@@ -115,7 +115,6 @@ html {
   position: relative;
   z-index: 99;
   top: 65px;
-  left: -50%;
   font-size: 90%;
 }
 .fa-angle {
@@ -127,6 +126,7 @@ html {
   background-color: rgba(245, 245, 245);
   border-radius: 5px;
   color: black;
+  font-weight: 450;
   padding: 5px 15px 5px 15px;
 }
 
@@ -140,6 +140,7 @@ html {
   top: -10px;
   border-radius: 5px;
   color: black;
+  font-weight: 450;
   background-color: rgba(245, 245, 245);
 }
 .routes-b {
@@ -165,7 +166,7 @@ html {
 }
 .church-logo {
   width: 55px;
-  top: 20%;
+  top: 10%;
   left: 30px;
   position: relative;
 }
@@ -177,7 +178,6 @@ html {
 .ul-menu {
   position: relative;
   display: flex;
-  left: 5%;
   top: -120px;
   justify-content: center;
   list-style: none;
@@ -195,7 +195,7 @@ html {
 .giving .h4 {
   color: white;
   font-size: 80%;
-  font-weight: 500;
+  font-weight: 420;
   cursor: pointer;
   z-index: 99;
   padding: 5px 15px 5px 15px;
@@ -206,7 +206,7 @@ html {
   padding: 0;
   color: white;
   margin: 0;
-  position: relative;
+  position: absolute;
   cursor: pointer;
 }
 @keyframes slide {
