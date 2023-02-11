@@ -1,8 +1,8 @@
 import { Component } from "react";
-import Logo from "./Images/church logo-copy.png";
-import Menu from "./Images/2976215.png";
+import Logo from "./Images/church logo-copy copy.webp";
+import Menu from "./Images/2976215 copy.webp";
 import { Link } from "react-router-dom";
-import MenuClose from "./Images/1907734.png";
+import MenuClose from "./Images/1907734 copy.webp";
 import { FaAngleUp, FaAngleDown } from "react-icons/fa";
 class Navigation extends Component {
   state = {

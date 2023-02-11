@@ -26,6 +26,9 @@
   font-weight: 700;
   margin-bottom: 2%;
 }
+.sermon-date {
+  margin-bottom: 2%;
+}
 .message-div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

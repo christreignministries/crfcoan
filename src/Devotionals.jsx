@@ -50,6 +50,7 @@ const Devotionals = () => {
               <div className="div-text">
                 <div>
                   <div className="sermon-title">{items.title}</div>
+                  <div className="sermon-date">{items.date}</div>
                   <div className="sermon-message">{items.message}</div>
                   <Link to={items.link} onClick={scrollUp}>
                     <button className="readmore">Read More</button>

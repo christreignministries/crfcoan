@@ -1,8 +1,8 @@
 import "./about.css";
-import ImageHeader from "./Images/IMG_4149.jpg";
-import Image from "./Images/IMG_0137.jpg";
-import PapaImage from "./Images/IMG_3710.jpg";
-import MamaImage from "./Images/Snr-Pst-Mama-Image-2.jpg";
+import ImageHeader from "./Images/IMG_4149 copy.webp";
+import Image from "./Images/IMG_0137 copy.webp";
+import PapaImage from "./Images/IMG_3710 copy.webp";
+import MamaImage from "./Images/Snr-Pst-Mama-Image-2 copy.webp";
 import Footer from "./footer";
 
 const About = () => {

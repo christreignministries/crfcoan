@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./contact.css";
-import Image from "./Images/IMG_5067.jpg";
+import Image from "./Images/IMG_5067 copy.webp";
 import { ClipLoader } from "react-spinners";
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import Footer from "./footer";

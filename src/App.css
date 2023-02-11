@@ -2,7 +2,7 @@ body {
   margin: 0;
   overflow-y: hidden;
   overflow-x: hidden;
-  background-image: url("Images/images---2022-09-06T223218.jpg");
+  background-image: url("Images/images---2022-09-06T223218");
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-family: Montserrat;
 }
@@ -366,6 +366,8 @@ html {
   top: 50px;
   color: white;
   background-color: #042444;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   margin: 0px 5% 0px 5%;
 }
 .quotes-text {
@@ -385,7 +387,6 @@ html {
   display: flex;
   position: relative;
   top: 100px;
-  height: 500px;
   margin: 20px 0px 50px 0px;
 }
 .partners-div .partners-image {
@@ -603,7 +604,7 @@ html {
   border: none;
   font-size: 100%;
   padding: 2% 3% 2% 3%;
-  margin: 0px 30% 0px 30%;
+  margin: -1% 30% 1% 30%;
 }
 .new-members {
   display: flex;
@@ -857,6 +858,7 @@ html {
     font-size: 120%;
     font-weight: 500;
   }
+
   @media only screen and (max-width: 600px) {
     .hamburger {
       display: block;

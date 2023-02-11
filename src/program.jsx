@@ -1,7 +1,6 @@
 import { useState } from "react";
-import ProgramImage from "./Images/IMG_3749.jpg";
 import { program } from "./programExport";
-import NewYearImage from "./Images/Welcome-to-2023-Design-copy.jpg";
+import NewYearImage from "./Images/Welcome-to-2023-Design-copy copy.webp";
 import "./program.css";
 import Footer from "./footer";
 

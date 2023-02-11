@@ -21,6 +21,7 @@ const BackToTopButton = () => {
   return (
     <div>
       <button
+        aria-label="back-to-top-button"
         style={{
           display: `${display ? "block" : "none"}`,
           position: "fixed",

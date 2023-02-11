@@ -1,12 +1,12 @@
 import { Component } from "react";
 import { images } from "./exportedImage";
-import ChurchImage from "./Images/IMG_4930.jpg";
+import ChurchImage from "./Images/IMG_4930 copy.webp";
 import Footer from "./footer";
 import { Event } from "./exportedImage";
 import { Link } from "react-router-dom";
-import { quotes, testimonies, prayer } from "./exportedText";
+import { quotes, testimonies2, prayer } from "./exportedText";
 import { FaQuoteLeft } from "react-icons/fa";
-import PartnerImage from "./Images/IMG_3177.jpg";
+import PartnerImage from "./Images/IMG_6214 copy.webp";
 import swal from "sweetalert";
 import {
   addDoc,
@@ -55,7 +55,7 @@ class Home extends Component {
 
   toggleText = () => {
     if (this.state.readmore2 === true) {
-      this.setState({ readmore1: testimonies[1].length, readmore2: false });
+      this.setState({ readmore1: testimonies2[1].length, readmore2: false });
     } else {
       this.setState({ readmore1: 133, readmore2: true });
     }
@@ -63,7 +63,7 @@ class Home extends Component {
 
   toggleText2 = () => {
     if (this.state.readmore2b1 === true) {
-      this.setState({ readmore2b: testimonies[0].length, readmore2b1: false });
+      this.setState({ readmore2b: testimonies2[0].length, readmore2b1: false });
     } else {
       this.setState({ readmore2b: 145, readmore2b1: true });
     }
@@ -126,7 +126,6 @@ class Home extends Component {
               src={images[count]}
               className="contact-us-image"
               alt="church-image"
-              loading="lazy"
             />
           </div>
           <div className="welcome-to-church">
@@ -161,18 +160,18 @@ class Home extends Component {
           </div>
           <div className="testimonies-items">
             <div className="testimonies-a">
-              <h2 className="names">Pastor (Mrs) Annabel Pelemoh</h2>
+              <h2 className="names">MRS. RUTH PIUS</h2>
               <div className="second">
-                {testimonies[0].slice(0, `${this.state.readmore2b}`)}
+                {testimonies2[0].slice(0, `${this.state.readmore2b}`)}
                 <button className="read-more-text" onClick={this.toggleText2}>
                   {this.state.readmore2b1 ? "read more" : "read less"}
                 </button>
               </div>
             </div>
             <div className="testimonies-a">
-              <h2 className="names">Mrs Vivian Ernest</h2>
+              <h2 className="names">MRS. TEGA MICHEAL</h2>
               <div className="second">
-                {testimonies[1].slice(0, `${this.state.readmore1}`)}
+                {testimonies2[1].slice(0, `${this.state.readmore1}`)}
                 <button className="read-more-text" onClick={this.toggleText}>
                   {this.state.readmore2 ? "read more" : "read less"}
                 </button>
@@ -243,9 +242,9 @@ class Home extends Component {
             <iframe
               title="declaration-video"
               className="video"
-              src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FChristreignministries%2Fvideos%2F5684684231575288%2F&show_text=false&width=560&t=0"
+              src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fweb.facebook.com%2FChristreignministries%2Fvideos%2F661059212369238%2F&show_text=false&width=476&t=0"
               width="560"
-              height="480"
+              height="600"
               style={{ border: "none", overflow: "hidden" }}
               scrolling="no"
               frameBorder="0"

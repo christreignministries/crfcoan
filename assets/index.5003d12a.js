@@ -10303,8 +10303,8 @@ class jm extends A.exports.Component {
     });
   }
 }
-const Um = "/crfcoan/assets/DAY 3 INCREASE CELEBRATION (3).a1e9d9f2.jpg",
-  Bm = "/crfcoan/assets/DAY 3 INCREASE CELEBRATION (26).dcd8e737.jpg",
+const Um = "/crfcoan/assets/DAY 3 INCREASE CELEBRATION (3).a1e9d9f2",
+  Bm = "/crfcoan/assets/DAY 3 INCREASE CELEBRATION (26).dcd8e737",
   nd = "/crfcoan/assets/IMG_7424.ecf94fb8.jpeg",
   ca = [Um, Bm, nd],
   $m = "/crfcoan/assets/IMG_4979.57941a73.jpeg",
@@ -10542,7 +10542,7 @@ const pa = "/crfcoan/assets/images - 2022-08-25T111508.791.5c882709.jpeg",
       ],
     });
   };
-const Qm = "/crfcoan/assets/SL_030420_28660_06.47db5f3c.jpg",
+const Qm = "/crfcoan/assets/SL_030420_28660_06.47db5f3c",
   Km = () =>
     T("div", {
       className: "parent-bg",

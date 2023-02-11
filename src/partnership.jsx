@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./giving.css";
 import "./partnership.css";
 import { ClipLoader } from "react-spinners";
-import ImageHeader from "./Images/images - 2022-09-06T222924.741.jpeg";
+import ImageHeader from "./Images/images---2022-09-06T222924.webp";
 import Footer from "./footer";
 import {
   addDoc,
