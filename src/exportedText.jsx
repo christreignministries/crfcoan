@@ -36,7 +36,7 @@ encounter with the man of GOD, no more itching, praise the LORD.
 ];
 
 export const testimonies2 = [
-  `04-11-2022. I want to appreciate GOD for HIS protection over my family. Last week thursday, my sister escaped *accident* four times
+  `04-11-2022. I want to appreciate GOD for HIS protection over my family. Last week thursday, my sister escaped accident four times
   in one day! Then this week thursday, my brother was attacked by armed robbers. Though they took everything that was with 
   him but they didn't harm him, he was safe and sound; Glory! Secondly, my mother has been sick, she was having problems and 
   they've booked her for operation so I came to church and registered for the PRAYER LINE. The man of GOD prayed for me and 

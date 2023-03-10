@@ -19,6 +19,7 @@ import {
 } from "firebase/firestore";
 import firestore from "./firebase";
 import Swal from "sweetalert2";
+import Typewriter from "typewriter-effect";
 
 class Home extends Component {
   state = {
@@ -115,8 +116,20 @@ class Home extends Component {
         <div className="contact-us-parent">
           <div className="homepage-image-container1">
             <div className="top-text">
-              <div className="first">Christ Cannot Reign</div>
-              <div className="first">and things remain the same</div>
+              <div className="first">
+                <Typewriter
+                  options={{
+                    strings: [
+                      "Christ Cannot Reign",
+                      "And things still remain the same",
+                    ],
+                    autoStart: true,
+                    loop: true,
+                    deleteSpeed: 100,
+                  }}
+                />
+              </div>
+              <div className="first">My Year of VOICE</div>
               <div className="second"></div>
               <Link to="/Sermon">
                 <button className="learn-more">Learn More</button>
@@ -218,12 +231,14 @@ class Home extends Component {
                 return (
                   <div key={i}>
                     <div className="events-grid">
-                      <img
-                        src={items.image}
-                        className="event-image"
-                        alt="event-image"
-                        loading="lazy"
-                      />
+                      <a href={items.href}>
+                        <img
+                          src={items.image}
+                          className="event-image"
+                          alt="event-image"
+                          loading="lazy"
+                        />
+                      </a>
                     </div>
                     {/* <h2 className="program-name">{items.event}</h2>
                   <h2 className="program-date"> {items.date}</h2> */}
@@ -235,14 +250,24 @@ class Home extends Component {
           <div className="upcoming-events"></div>
           <div className="footer-body">
             <h2 className="born-again">BE BORN AGAIN</h2>
-            <h3 className="say-these-prayers">SAY THESE PRAYERS</h3>
+            <h3 className="say-these-prayers">
+              {" "}
+              <Typewriter
+                options={{
+                  strings: ["SAY THESE PRAYERS", "SAY THESE PRAYERS"],
+                  autoStart: true,
+                  loop: true,
+                  deleteSpeed: 100,
+                }}
+              />
+            </h3>
             <h4 className="salvation-prayer">{prayer[0]}</h4>
           </div>
           <div className="facebook-video">
             <iframe
               title="declaration-video"
               className="video"
-              src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fweb.facebook.com%2FChristreignministries%2Fvideos%2F661059212369238%2F&show_text=false&width=476&t=0"
+              src="https://www.facebook.com/plugins/video.php?height=308&href=https%3A%2F%2Fwww.facebook.com%2FChristreignministries%2Fvideos%2F123182110513232%2F&show_text=false&width=560&t=0"
               width="560"
               height="600"
               style={{ border: "none", overflow: "hidden" }}

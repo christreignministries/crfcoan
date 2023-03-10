@@ -4,6 +4,7 @@ import Image from "./Images/IMG_5067 copy.webp";
 import { ClipLoader } from "react-spinners";
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import Footer from "./footer";
+import Typewriter from "typewriter-effect";
 // import axios from "axios";
 import {
   addDoc,
@@ -99,7 +100,16 @@ const ContactUs = () => {
     <div className="contact-us-parent">
       <div className="homepage-image-container1">
         <div className="top-text">
-          <div className="first">For more enquiries</div>
+          <div className="first">
+            <Typewriter
+              options={{
+                strings: ["For more enquiries", "For prayers, counselling"],
+                autoStart: true,
+                loop: true,
+                deleteSpeed: 100,
+              }}
+            />
+          </div>
           <div className="second">React out to us</div>
         </div>
         <img src={Image} className="contact-us-image" alt="contact-us-image" />

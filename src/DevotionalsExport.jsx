@@ -86,7 +86,7 @@ export const DevotionalsImage = [
     title: "Life in the Spiirt Seminar Teachings",
     date: "Thursday 19th January, 2023",
     message:
-      "Do not go into the rooms of anh Reigner when you pay them a visit, apart from the sitting room, exceeding that would mean something else entirely. When you enter into any house, study the house. Be calculative and...",
+      "Do not go into the rooms of any Reigner when you pay them a visit, apart from the sitting room, exceeding that would mean something else entirely. When you enter into any house, study the house. Be calculative and...",
     link: "/Sermon/Life-in-The-Spirit-Seminar-Teachings-b",
   },
 ];

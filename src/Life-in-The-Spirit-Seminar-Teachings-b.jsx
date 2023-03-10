@@ -32,7 +32,7 @@ const Message9 = () => {
             Text: 1 Samuel 11:6-13, Matthew 6:21
           </div>
           <div className="paragraph">
-            1. Do not go into the rooms of anh Reigner when you pay them a
+            1. Do not go into the rooms of any Reigner when you pay them a
             visit, apart from the sitting room, exceeding that would mean
             something else entirely.
           </div>

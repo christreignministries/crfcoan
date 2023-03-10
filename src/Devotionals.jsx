@@ -3,6 +3,7 @@ import "./Devotionals.css";
 import { DevotionalsImage } from "./DevotionalsExport";
 import { Link } from "react-router-dom";
 import Footer from "./footer";
+import Typewriter from "typewriter-effect";
 
 const Devotionals = () => {
   const [search, setSearch] = useState("");
@@ -19,7 +20,16 @@ const Devotionals = () => {
 
       <div className="top-header">
         <h3>Category</h3>
-        <h2 className="devotional">Sermon</h2>
+        <h2 className="devotional">
+          <Typewriter
+            options={{
+              strings: ["Sermons", "Messages"],
+              autoStart: true,
+              loop: true,
+              deleteSpeed: 100,
+            }}
+          />
+        </h2>
         <div className="search-parent">
           <input
             placeholder="Search for a sermon title"

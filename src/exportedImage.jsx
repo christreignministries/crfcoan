@@ -8,8 +8,8 @@ import Image7 from "./Images/IMG_5514 copy.webp";
 import Image8 from "./Images/IMG_6706 copy.webp";
 import Image9 from "./Images/DAY-3-INCREASE-CELEBRATION-(26) copy.webp";
 import Image10 from "./Images/Welcome-to-2023-Design-copy copy.webp";
-import Image11 from "./Images/February-Night-of-Solution-2023-copy copy.webp";
-import Image12 from "./Images/Welcome-to-February-2023-copy copy.webp";
+import Image11 from "./Images/Sunday-Breakthrough-Service-Design-copy copy.webp";
+import Image12 from "./Images/Welcome-to-March-2023-copy_022911 copy.webp";
 
 export const images = [
   Image,
@@ -25,9 +25,13 @@ export const images = [
 
 export const Event = [
   {
-    event: "Welcome to February",
-    date: "1st to 28th February",
-    image: Image12,
+    event: "Breakthrough Service",
+    image: Image11,
+    href: "https://www.facebook.com/photo?fbid=515610897431462&set=a.395965186062701",
   },
-  { event: "Night of Solution", date: "3rd February 2023", image: Image11 },
+  {
+    event: "Welcome to March",
+    image: Image12,
+    href: "https://www.facebook.com/photo?fbid=510604247932127&set=a.395965186062701",
+  },
 ];

@@ -14,6 +14,7 @@ import {
   serverTimestamp,
 } from "firebase/firestore";
 import firestore from "./firebase";
+import Typewriter from "typewriter-effect";
 
 const Partnership = () => {
   const [name, setName] = useState("");
@@ -117,7 +118,16 @@ const Partnership = () => {
       <div className="giving-bg">
         <div className="homepage-image-container1">
           <div className="top-text">
-            <div className="first">Partner with GOD</div>
+            <div className="first">
+              <Typewriter
+                options={{
+                  strings: ["Partner with GOD", "PARTNER WITH GOD"],
+                  autoStart: true,
+                  loop: true,
+                  deleteSpeed: 100,
+                }}
+              />
+            </div>
             <div className="second">
               2 Corinthians 9:7b for God loveth a cheerful giver
             </div>

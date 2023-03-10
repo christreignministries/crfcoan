@@ -4,6 +4,7 @@ import Image from "./Images/IMG_0137 copy.webp";
 import PapaImage from "./Images/IMG_3710 copy.webp";
 import MamaImage from "./Images/Snr-Pst-Mama-Image-2 copy.webp";
 import Footer from "./footer";
+import Typewriter from "typewriter-effect";
 
 const About = () => {
   return (
@@ -11,7 +12,15 @@ const About = () => {
       <div className="contact-us-parent">
         <div className="homepage-image-container1">
           <div className="top-text">
-            <div className="first">About Us</div>
+            <div className="first">
+              <Typewriter
+                options={{
+                  strings: ["About US", "Know more about us"],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </div>
             <div className="second">Increase City Church (CRFCOAN)</div>
           </div>
           <img
